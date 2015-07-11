@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	font: 16px '微软雅黑',Helvetica,Arial,sans-serif;
+	background-image:url(../img/bg.png);
+}
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#top {
+	width: 100%;
+	height: 500px;
+	background-color:#373737;
+	position:relative;
+}
+#top #menuBar {
+	font-size:18px;
+	height:60px;
+	width:100%;
+	position:absolute;
+	z-index:3;
+	top: 0;
+	left: 0;
+
+	/*阴影*/
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.6) , 0 -5px 30px rgba(0,0,0,0.9) inset;
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.6),0 -5px 30px rgba(0,0,0,0.9) inset;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.6) , 0 -5px 30px rgba(0,0,0,0.9) inset;
+	
+	background-color:rgba(0,0,0,0.6);
+	color:#FFF;
+}
+#menuBar ul {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#menuBar ul li {
+	float:left;
+	width:130px;
+	height: 40px;
+	padding-top: 20px;
+	text-align:center;
+	cursor:pointer;
+	
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+#menuBar ul li:hover {
+	background-color: rgba(255,0,0,0.6);
+	font-size: 24px;
+	height: 50px;
+	
+	/*圆角边框*/
+	-moz-border-radius: 0 0 5px 5px ; /*Firefox*/
+	-webkit-border-radius: 0 0 5px 5px; /*Safari、Chrome*/
+	border-radius: 0 0 10px 10px; /*Opera 10.5+、IE 6+*/
+	
+	
+}
+#top #boder {
+	width:100%;
+	height:100%;
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.6) , 0 -5px 30px rgba(0,0,0,0.9) inset;
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.6),0 -5px 30px rgba(0,0,0,0.9) inset;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.6) , 0 -5px 30px rgba(0,0,0,0.9) inset;
+}
+#top #btnBar {
+	background-image:url(../img/features_ribbon.png);
+	width:1006px;
+	height:69px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	position:relative;
+	top: -23px;
+	z-index:2;
+}
+#top #view {
+	color:#CCCCCC;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}
+#view #film{
+	width:20000px;/*使 li 并成一排*/
+	/*相对定位*/
+	position:relative;
+	left: 0;
+}
+#film li {
+	width:1000px;
+	display:block;
+	float:left;/*左浮动*/
+}

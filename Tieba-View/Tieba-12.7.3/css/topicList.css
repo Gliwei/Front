@@ -1,0 +1,94 @@
+/* CSS Document */
+/* -- common -- */
+ul , li {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+/* -- common end-- */
+/* -- list -- */
+.list li {
+	padding: 10px;	
+}
+.list li .line2 {
+	margin-top:3px;
+	text-align:right;
+	font-size:14px;
+	color:#999;
+}
+.list .replyCount {
+	/*圆角边框*/
+	-moz-border-radius: 15px; /*Firefox*/
+	-webkit-border-radius: 15px; /*Safari、Chrome*/
+	border-radius: 15px;
+	box-shadow: 0px 1px 2px #666666 inset;
+	text-align:center;
+	width:40px;
+	position:absolute;
+	border: 1px double #DCDCDC;
+	margin: 3px;
+	font-size:14px;
+	color:#666666;
+}
+.list .title {
+	cursor:pointer;
+	color:#00C;
+	margin-left:60px;
+	display:block;
+}
+.odd {
+	background:#DCDCDC;
+	/*
+	box-shadow: 0px 1px 2px #666666 inset;
+	*/
+	background-image: url(../images/odd.png);
+	background-repeat: repeat-x;
+	
+}
+.even {
+	border-top:solid 1px #FFF;
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	box-shadow: 0px -1px 2px #666666;
+}
+.list li .title:hover {
+	color:#00F;
+}
+/***************************************************/
+.pages {
+	height:45px;
+	text-align:center;
+}
+.pages ul {
+}
+.pages ul li {
+	cursor:pointer;
+	font-size:14px;
+	display:inline-block;
+	/*圆角边框*/
+	-moz-border-radius: 5px; /*Firefox*/
+	-webkit-border-radius: 5px; /*Safari、Chrome*/
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px #666666 inset;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.pages ul li:hover {
+	background: -moz-linear-gradient(center top , #F3A814 , #B66101 ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	box-shadow: 0px 0px 1px #666;
+	background-color:#CCC;
+	
+}
+.pages ul li:active {
+    background: -moz-linear-gradient(center top ,#B66101 , #F3A814) repeat scroll 0 0 #CCCCCC;
+    box-shadow: 0 0 1px #666666;
+}
+.sp {/* 当前页 select page*/
+	background: -moz-linear-gradient(center top , #F3A814 , #B66101 ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #F3A814),color-stop(1, #B66101));
+	box-shadow: 0px 0px 1px #666;
+	background-color:#CCC;
+}

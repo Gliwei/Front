@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>权限管理</title>
+<link href="css/common-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/dialog.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script>
+$(function(){
+	$(".delete").click(function(e) {
+        $(this).parent().fadeOut(300);
+    });
+});
+function showDialog(){
+	$("#mask").show(0);
+	$(".dialog").css({"top":function(){
+		var top = ($(window).height()-$(this).height())/2;
+		if(top < 0) top = 50;
+		return top;
+	},left:function(){
+		return ($(window).width()-$(this).width())/2;
+	}}).slideDown(300);
+}
+function closeDialog(){
+	$(".dialog").slideUp(300,function(){
+		$("#mask").hide(0);
+	});
+}
+</script>
+</head>
+
+<body>
+	<div id="mask"></div>
+	<div class="c-tit">
+    	<span class="text">列表</span>
+    </div>
+	<div class="title">标题</div>
+	<ul class="flat">
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li class="add" onclick="showDialog();"><i class="icon-plus"></i></li>
+    </ul>
+    <div class="title">标题</div>
+    <ul class="flat">
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li>htp：文本CNT<i class="icon-remove-sign delete" title="删除"></i></li>
+		<li class="add" onclick="showDialog();"><i class="icon-plus"></i></li>
+	</ul>
+	<div class="dialog">
+		<div class="title">
+        	<h3>添加权限</h3>
+        	<div class="close" onclick="closeDialog();"><i class="icon-remove-sign"></i></div>
+        </div>
+		<div class="d-cnt">
+			<ul class="power-list">
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+                <li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+				<li><input type="checkbox" />htp：隐藏帖子</li>
+			</ul>
+		</div>
+		<div class="c-btm">
+			<span class="grayBtn">取消</span>
+			<span class="grayBtn">添加选中项</span>
+		</div>
+	</div>
+</body>
+</html>

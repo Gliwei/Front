@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>冻结表头功能</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+-->
+</style>
+</head>
+<style type="text/css"> 
+body,td,div,input,fieldset,legend{font-family:Verdana; font-size:12px; color:#333333; font-weight:normal;}
+td{line-height:20px;}
+a:link,a:visited{font-family:Verdana; font-size:12px; color:#330099; font-weight:normal; padding:0px 3px; text-decoration:none;}
+a:hover,a:active{font-family:Verdana; font-size:12px; color:#FF6600; font-weight:normal; }
+span{font-family:Verdana; font-size:12px; color:red; font-weight:normal; display:block; margin:0px 10px;}
+.cur01{background-color:#00CCFF; color:#FF3300; font-weight:bold;}
+</style>
+<script language="javascript" type="text/javascript">
+function $(objID){	
+	return "string" == typeof(objID) ? document.getElementById(objID) : objID;
+	}
+	
+var gscrTop=0;
+var gLeft=1;	//初始Left位置,根据需要修改
+var gTop=65;	//初始Top位置,需要修改
+function initPos(Left,Top){
+	var initLeft=parseInt(Left,10);		
+	var initTop=parseInt(Top,10);		
+	$("xtitle").style.left=initLeft+"px";
+	$("xtitle").style.top=initTop+"px";
+}
+
+function freezeTitle(){
+	if(document.body.scrollTop>0){
+		var oldTop=parseInt($("xtitle").style.top,10);
+		var newTop=oldTop+document.body.scrollTop-gscrTop;
+		$("xtitle").style.top=newTop+"px";
+		gscrTop=document.body.scrollTop;
+	}else{
+		if(parseInt($("xtitle").style.top,10)!=gTop)
+		$("xtitle").style.top=gTop+"px";
+	}
+}
+window.onload=function(){
+initPos(gLeft,gTop);
+setInterval("freezeTitle()",30);
+}
+</script>
+<body>
+<span>
+<br>
+<b>冻结表头功能, 滚动条变化时注意蓝色的表头</b>
+<br>
+created: 2009-11-27<br>
+author: shenzhenNBA
+</span>
+<br>
+<br>
+<table width="100%"  border="0" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" style="border:1px solid #336699;">
+  <tr id="xtitle" style="display:block; position:absolute; left:0px; top:65px;" bgcolor="#66CCFF">
+    <td width="19%"><b>列01</b></td>
+    <td width="21%"><b>列02</b></td>
+    <td width="19%"><b>列03</b></td>
+    <td width="21%"><b>列04</b></td>
+    <td width="20%"><b>列05</b></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0101</td>
+    <td>0102</td>
+    <td>0103</td>
+    <td>0104</td>
+    <td>0105</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0201</td>
+    <td>0202</td>
+    <td>0203</td>
+    <td>0204</td>
+    <td>0205</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0301</td>
+    <td>0302</td>
+    <td>0303</td>
+    <td>0304</td>
+    <td>0305</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0401</td>
+    <td>0402</td>
+    <td>0403</td>
+    <td>0404</td>
+    <td>0405</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0501</td>
+    <td>0502</td>
+    <td>0503</td>
+    <td>0504</td>
+    <td>0505</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0601</td>
+    <td>0602</td>
+    <td>0603</td>
+    <td>0604</td>
+    <td>0605</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0701</td>
+    <td>0702</td>
+    <td>0703</td>
+    <td>0704</td>
+    <td>0705</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0801</td>
+    <td>0802</td>
+    <td>0803</td>
+    <td>0804</td>
+    <td>0805</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0901</td>
+    <td>0902</td>
+    <td>0903</td>
+    <td>0904</td>
+    <td>0905</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0101</td>
+    <td>0102</td>
+    <td>0103</td>
+    <td>0104</td>
+    <td>0105</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0201</td>
+    <td>0202</td>
+    <td>0203</td>
+    <td>0204</td>
+    <td>0205</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0301</td>
+    <td>0302</td>
+    <td>0303</td>
+    <td>0304</td>
+    <td>0305</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0401</td>
+    <td>0402</td>
+    <td>0403</td>
+    <td>0404</td>
+    <td>0405</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0501</td>
+    <td>0502</td>
+    <td>0503</td>
+    <td>0504</td>
+    <td>0505</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0601</td>
+    <td>0602</td>
+    <td>0603</td>
+    <td>0604</td>
+    <td>0605</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0701</td>
+    <td>0702</td>
+    <td>0703</td>
+    <td>0704</td>
+    <td>0705</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0801</td>
+    <td>0802</td>
+    <td>0803</td>
+    <td>0804</td>
+    <td>0805</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0901</td>
+    <td>0902</td>
+    <td>0903</td>
+    <td>0904</td>
+    <td>0905</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0101</td>
+    <td>0102</td>
+    <td>0103</td>
+    <td>0104</td>
+    <td>0105</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0201</td>
+    <td>0202</td>
+    <td>0203</td>
+    <td>0204</td>
+    <td>0205</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0301</td>
+    <td>0302</td>
+    <td>0303</td>
+    <td>0304</td>
+    <td>0305</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0401</td>
+    <td>0402</td>
+    <td>0403</td>
+    <td>0404</td>
+    <td>0405</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0501</td>
+    <td>0502</td>
+    <td>0503</td>
+    <td>0504</td>
+    <td>0505</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0601</td>
+    <td>0602</td>
+    <td>0603</td>
+    <td>0604</td>
+    <td>0605</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0701</td>
+    <td>0702</td>
+    <td>0703</td>
+    <td>0704</td>
+    <td>0705</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0801</td>
+    <td>0802</td>
+    <td>0803</td>
+    <td>0804</td>
+    <td>0805</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>0901</td>
+    <td>0902</td>
+    <td>0903</td>
+    <td>0904</td>
+    <td>0905</td>
+  </tr>
+</table>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>
+

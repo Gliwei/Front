@@ -1,0 +1,61 @@
+/* CSS Document */
+.login {
+	position:relative;
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	padding:10px;
+	border-radius: 2px;
+	box-shadow: 0 0 300px #00F;
+	
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EBEBEB', endColorstr='#DDDDDD');
+}
+.login div {
+	margin:6px;
+}
+.login .msg {
+	height:25px;
+	text-align:center;
+	color:red;
+}
+.login #uname, .login #upass{
+	width:200px;
+	height:25px;
+	font-size:16px;
+}
+.login .lable {
+	font-size:18px;
+	font-weight:bold;
+	color:#787A77;
+	text-shadow: 1px 0px 1px #999999 inherit;
+}
+.login .back{
+	position:absolute;
+	top:0;
+	right:0;
+	width:17px;
+	height:17px;
+	background-image:url(../images/delete.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.login .btnBox {
+	width:280px;
+	height:30px;
+	text-align:right;
+}
+.login .reg {
+	position:relative;
+	top:12px;
+}
+.login #sendLogin{
+	width:60px;
+	float:right;
+}
+.login #msg {
+	color:red;
+	text-align:center;
+}

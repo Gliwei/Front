@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+         url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	color: #363636;
+    font-family: Arial;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+ul ,li {
+	margin:0;
+	padding:0;
+}
+body.dashborad {
+    background-image: url("../img/menu_bg.jpg");
+    background-repeat: repeat-y;
+}
+#header {
+	background: url("../img/top_bgrepeat.jpg") repeat-x scroll 0 0 #000000;
+    box-shadow: 0 2px 15px #333333;
+    color: #FFFFFF;
+    height: 45px;
+    overflow: hidden;
+    position: fixed;
+    text-shadow: 1px 0 0 #666666;
+    width: 100%;
+    z-index: 47;
+}
+#header #logo {
+	background-image:url(../img/logo.png);
+	position:absolute;
+	top:6px;
+	left:10px;
+	height:30px;
+	background-repeat: no-repeat;
+	padding-left:35px;
+}
+#header #logo h1{
+	color:#E1E1E1;
+	font-size:14px;
+	padding:0;
+	margin:0;
+}
+#header #logo h3{
+	padding:0;
+	margin:0;
+	font-size:12px;
+	color:#cdcdcd;
+}
+#header #account_info {
+    margin: 0 35px 0 0;
+    overflow: hidden;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+#header #account_info div {
+    background-image: url("../img/accbg.png");
+    background-repeat: no-repeat;
+    border-left: 1px solid #333333;
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    line-height: 47px;
+    padding: 0 10px 0 20px;
+}
+b {
+    font-weight: bold;
+}
+#header #account_info div .red {
+    color: #FF0000;
+}
+img {
+    border: 0 none;
+}
+#header #account_info img {
+    margin-bottom: -12px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#header #account_info img.gear {
+    -moz-transition: width 2s ease 0s, height 2s ease 0s, -moz-transform 2s ease 0s;
+    margin-bottom: -12px;
+    margin-right: -5px;
+}
+#header #account_info img.disconnect {
+    margin-top: 8px;
+}
+.setting {
+
+}
+#shadowhead {
+    background-image: url("../img/pick_bg.jpg");
+    background-repeat: repeat-x;
+    display: none;
+    height: 58px;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    z-index: -5;
+}
+/*************************************************************************************************/
+#left_menu {
+    background-image: url("../img/menu_bg.jpg");
+    float: left;
+    left: 0;
+    position: absolute;
+    top: 45px;
+    z-index: 48;
+}
+.main_menu {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.main_menu li {
+    border-bottom: 1px solid #212123;
+    border-top: 1px solid #3F3F42;
+    display: block;
+    text-transform: capitalize;/*************?????*/
+    width: 100%;
+}
+.main_menu li:hover {
+	border-bottom: 1px solid #111111;
+	border-top: 1px solid #000000;
+	background-image: url(../img/foot.png);
+}
+.main_menu li.select {
+	background-image: url(../img/selectM.png);
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #111111;
+	border-top: 1px solid #000000;
+	background-position: left top;
+}
+a {
+    color: #1F92FF;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 0 0 transparent;
+}
+.main_menu li a {
+    -moz-transition: background-color 0.2s ease-out 0s;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 17px 20px 17px 30px;
+    text-shadow: 0 2px 0 #000000;
+}
+span.ico {
+	font-family: 'WebSymbolsRegular', cursive;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 18px;
+    margin-bottom: -3px;
+    margin-right: 5px;
+    width: 18px;
+}
+a span.ico {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 18px;
+    margin-bottom: -3px;
+    margin-right: 12px;
+    width: 18px;
+}
+.main_menu li ul {
+    background-image: url("../img/214.png");
+    background-position: right top;
+    border: 1px solid #111111;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 3px 2px #333333;
+    clear: both;
+   
+    float: left;
+    left: 200px;
+    list-style: none outside none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: -52px;
+    position: absolute;
+    width: 150px;
+	
+	display:none;
+}
+.main_menu li ul li {
+    -moz-transition: all 0.2s ease-out 0s;
+    background-image: none;
+    border-bottom: 1px solid #111111;
+    border-top: 1px solid #333333;
+    height: 45px;
+    padding: 3px 0;
+    width: auto;
+}
+.main_menu li .arr {
+    height: 100%;
+    left: -16px;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    width: 6px;
+    z-index: 100;
+}
+.main_menu li .arr span {
+    background-image: url("../img/arr3.png");
+    display: block;
+    height: 12px;
+    left: 9px;
+    position: absolute;
+    top: 20px;
+    width: 6px;
+}
+.main_menu li ul li:hover {
+    background-image: none;
+    border-bottom: 1px solid #111111;
+    border-top: 1px solid #333333;
+    box-shadow: 0 0 20px 1px #000000 inset;
+    list-style: none outside none;
+    padding-left: 10px;
+}
+.main_menu li ul li:first-child {
+    border-bottom: medium none;
+    border-top: 1px solid #333333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0;
+}
+.main_menu li ul li:last-child {
+    border-bottom: medium none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid #333333;
+    margin-bottom: 0;
+}
+.main_menu li ul li a {
+    color: #FFFFFF;
+    margin-left: 32px;
+    padding-left: 0 !important;
+    padding-top: 13px !important;
+    text-shadow: none;
+}
+/**************************************************************Content******/
+#content {
+	margin-left:240px;
+}
+#inner {
+	padding-top:45px;
+	width:98%;
+	height:1000px;
+}
+
+/******************************************************************Other******/
+#goTop {
+	position:fixed;
+	bottom: 8px;
+	right: 10px;
+	cursor:pointer;
+	opacity:0.8;
+	display:none;
+}

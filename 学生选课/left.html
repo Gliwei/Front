@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="CSS/left.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background-color: #F7F7F7;
+}
+</style>
+<script language="javascript">
+function showMenu(id_menu){
+var my_menu = document.getElementById(id_menu);
+if(my_menu.style.display=="none" || my_menu.style.display==""){
+	my_menu.style.display="block";
+	} else { 
+	my_menu.style.display="none";
+	}
+}
+</script>
+</head>
+<body>
+<div id="menu">
+<div id="manage" onClick="javascript:showMenu('box1')"  onmouseup="">&nbsp;管理中心&nbsp;&nbsp;&nbsp;<strong>+</strong></div>
+<div id="box1" style="display:block">
+<a href="http://www.baidu.com" target="mainFrame"><div id="manage1">&nbsp;分类管理</div></a>
+<a href="" target="mainFrame"><div id="manage1">&nbsp;分类管理</div></a>
+<a href="" target="mainFrame"><div id="manage1">&nbsp;分类管理</div></a>
+<a href="" target="mainFrame"><div id="manage1">&nbsp;分类管理</div></a>
+<a href="" target="mainFrame"><div id="manage1">&nbsp;分类管理</div></a>
+<a href="" target="mainFrame"><div id="manage1">&nbsp;分类管理</div></a>
+<a href="" target="mainFrame"><div id="manage2">&nbsp;分类管理</div></a>
+</div>
+</div>
+<br />
+<div id="menu">
+<div id="manage" onClick="javascript:showMenu('box2')" >&nbsp;管理中心&nbsp;&nbsp;&nbsp;<strong>+</strong></div>
+<div id="box2" style="display:block">
+<div id="manage1">&nbsp;分类管理</div>
+<div id="manage1">&nbsp;分类管理</div>
+<div id="manage1">&nbsp;分类管理</div>
+<div id="manage2">&nbsp;分类管理</div>
+</div>
+</div>
+</body>
+</html>

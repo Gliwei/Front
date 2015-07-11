@@ -1,0 +1,122 @@
+/* CSS Document */
+body,ul,li,p,h1,h2,h3,h4,h5,a {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight:100;
+	text-decoration:none;
+}
+body {
+	font-family: arial,宋体,sans-serif;
+	font-size:12px;
+	/*background-image: url(../images/bg_pointsdown.png);*/
+}
+.boder {
+	border:solid 1px #666666;
+}
+.base {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*********************************/
+#top {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+#top .portrait {
+	float:left;
+	width:140px;
+	height:118px;
+	background-image:url(../images/portrait_bg.png);
+	background-repeat:no-repeat;
+}
+#top .portrait img {
+	margin: 0 0 0 15px;
+	width:110px;
+	height:110px;
+}
+#top .info {
+	margin-left:150px;
+	min-height:120px;
+}
+#top .info div {
+	line-height:25px;
+}
+#top .info .uname {
+	font-size: 20px;
+	line-height: 33px;
+    font-weight: normal;
+	color:#2871C0;
+}
+/*********************************/
+#center .tab-header li {
+	background-color: #FFFFFF;
+	display:inline-block;
+	font-size:16px;
+	font-weight: 700;
+	padding: 8px 20px 5px 20px;
+	color:#666666;
+	border-color: #EEEEEE;
+    border-style: solid;
+    border-width: 1px 1px 0;
+	cursor:pointer;
+}
+#center .tab-header li:hover {
+	border-top: 1px #6699C9 solid;
+}
+#center .tab-header .s {
+	position:relative;
+	bottom:-1px;
+	padding-top:13px;
+	border-top: 2px #6699C9 solid;
+}
+#center .tab-header .s:hover {
+	border-top: 2px #6699C9 solid;
+}
+#center .tab-content {
+	background-color: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	min-height:500px;
+}
+#center .tab-content ul.msg-content{
+	padding: 20px;
+	font-size:14px;
+}
+#center .tab-content ul.msg-content li {
+	padding: 10px 5px;
+	border-bottom: 1px solid #F2F2F2;
+	cursor:pointer;
+}
+#center .tab-content ul.msg-content li:hover {
+	background-color:#F3F3F3;
+}
+#center .tab-content ul.msg-content li div {
+	line-height:22px;
+}
+/*************************/
+#reminders {
+	position:relative;
+	overflow:hidden;
+}
+#reminders .left {
+	width:750px;
+	height:100%;
+	min-height:500px;
+	box-shadow: 0 0 2px #E7ECF0;
+}
+#reminders .right {
+	position:absolute;
+	top:0;
+	right:0;
+	z-index: -1;
+	width:250px;
+	height:100%;
+	background-color:#F1F4F6;
+}
+/***************************************/
+#bottom {
+	text-align:center;
+	color: #2C76C0;
+	padding: 25px 0;
+}

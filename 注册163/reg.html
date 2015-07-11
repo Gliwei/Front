@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>reg</title>
+		<meta name="author" content="Glw" />
+		<!-- Date: 2013-05-15 -->
+		<link href="css/reg.css" rel="stylesheet" type="text/css" />
+		<script src="js/util.js"></script>
+		<script src="js/reg.js"></script>
+	</head>
+	<body>
+		<div id="top">
+			Top
+		</div>
+		<div id="center">
+			<div class="base wrap">
+				<div id="title">
+					<h4>欢迎注册网易免费邮!</h4>
+				</div>
+				<div id="content">
+					<div class="left">
+						<div id="tab">
+							<span onclick="tabClick('l',this);" style="color: #FFFFFF">注册字母邮箱</span><span onclick="tabClick('r',this);">注册手机号码邮箱</span>
+						</div>
+						<div id="common">
+							<form>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 邮箱地址</div>
+									<div class="regFormCnt">
+										<input type="text" name="ename" class="ipt" style="width: 200px;" onblur="checkName(this);"/>
+										<strong> @ </strong>
+										<select>
+											<option value="1" selected="">163.com</option>
+											<option value="2">126.com</option>
+											<option value="3">yeah.net</option>
+										</select>
+										<div class="regFormTip">6~18个字符，可使用字母、数字、下划线，需以字母开头</div>
+										<div id="nameWarnTip" class="warnTipDiv">
+											<div class="arr">&nbsp;</div>
+											<span class="warnIconBig">&nbsp;</span>
+											<span class="warnText">6~18个字符</span>
+										</div>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 密码</div>
+									<div class="regFormCnt">
+										<input type="password" name="password" class="ipt" style="width: 322px;"/>
+										<div class="regFormTip">6~16个字符，区分大小写</div>
+										<div class="warnTip">
+											<span class="warnIcon">&nbsp;</span>
+											<span class="warnText">6~16个字符，区分大小写</span>
+										</div>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 确认密码</div>
+									<div class="regFormCnt">
+										<input type="password" name="repassword" class="ipt" style="width: 322px;"/>
+										<div class="regFormTip">请再次填写密码</div>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 验证码</div>
+									<div class="regFormCnt">
+										<input type="text" name="vcode" class="ipt" style="width: 190px;"/>
+										<div class="regFormTip">请填写图片中的字符，不区分大小写</div>
+									</div>
+									<div class="vcode">&nbsp;</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormCnt">
+										<span class="txt"><input type="checkbox" />同意<a href="#">"服务条款"</a>和<a href="#">"隐私权相关政策"</a></span>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormCnt">
+										<a href="#" class="btn">立即注册</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div id="phone" style="display: none">
+							<form>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 手机号码</div>
+									<div class="regFormCnt">
+										<input type="text" name="phone" class="ipt" style="width: 200px;" onblur="checkName(this);"/>
+										<strong> @ </strong>
+										<select>
+											<option value="1" selected="">163.com</option>
+											<option value="2">126.com</option>
+											<option value="3">yeah.net</option>
+										</select>
+										<div class="regFormTip">请填写手机号码</div>
+										<div id="phoneErrTip" class="warnTipDiv" style="display: none;">
+											<div class="arr">&nbsp;</div>
+											<span class="warnIconBig">&nbsp;</span>
+											<span class="warnText">6~18个字符</span>
+										</div>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormCnt">
+										<input type="button" value="免费获取验证码" style="width: 120px; height: 30px;">
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 验证码</div>
+									<div class="regFormCnt">
+										<input type="text" name="vcode" class="ipt" style="width: 322px;"/>
+										<div class="regFormTip">请查收手机短信，并填写短信中的验证码</div>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 密码</div>
+									<div class="regFormCnt">
+										<input type="password" name="password" class="ipt" style="width: 322px;"/>
+										<div class="regFormTip">6~16个字符，区分大小写</div>
+										<div class="warnTip">
+											<span class="warnIcon">&nbsp;</span>
+											<span class="warnText">6~16个字符，区分大小写</span>
+										</div>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormRowTit">* 确认密码</div>
+									<div class="regFormCnt">
+										<input type="password" name="repassword" class="ipt" style="width: 322px;"/>
+										<div class="regFormTip">请再次填写密码</div>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormCnt">
+										<span class="txt"><input type="checkbox" />同意<a href="#">"服务条款"</a>和<a href="#">"隐私权相关政策"</a></span>
+									</div>
+								</div>
+								<div class="regFormRow">
+									<div class="regFormCnt">
+										<a href="#" class="btn">立即注册</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="right">
+						<div class="rcnt">
+							Right View
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			Bottom
+		</div>
+	</body>
+</html>
+

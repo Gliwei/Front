@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../img/login_bg.png);	
+	font: 16px '微软雅黑',Helvetica,Arial,sans-serif;
+	color:#CCC;
+}
+#main {
+	padding-top: 30px;
+}
+#head {
+	box-shadow: 3px 3px 5px #000;
+	height: 154px;
+	width: 122px;
+	border: 1px solid #0A0909;
+	background-image: url(../img/head.png);
+}
+#btnBox {
+	background-image: none;
+	text-align:right;
+	padding-top: 10px;
+}
+#btnBox img {
+	cursor:pointer;
+	margin-right:5px;
+}
+#inputView {
+	margin-right: auto;
+	margin-left: auto;
+	width:460px;
+}
+form {
+	float:right;
+}
+form div {
+	background-image: url(../img/text.png);
+	height: 44px;
+	width: 322px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+form div img{
+	margin-left:20px;
+}
+form div p{
+	width:225px;
+	height:50px;
+	color:#FFF;
+	position: relative;
+	top: -85px;
+	left:200px;
+	background-image: url(../img/tip.png);
+	background-repeat: no-repeat;
+	display: none;
+	text-align: center;
+	margin: 0px;
+	padding: 5px 0px 0px 0px ;
+}
+input[type="text"] {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: url(../img/text_bg.png);
+	height: 37px;
+	width: 250px;
+	margin-left: 15px;
+	margin-top: 3px;
+	color: #CCC;
+	font-size: 18px;
+}
+input[type="password"] {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: url(../img/text_bg.png);
+	height: 37px;
+	width: 250px;
+	margin-left: 15px;
+	margin-top: 3px;
+	color: #CCC;
+	font-size: 18px;
+}

@@ -1,0 +1,79 @@
+/* CSS Document */
+body {
+	font-family: arial,宋体,sans-serif;
+	background-color:#000;
+	background-image:url(../images/sl_bg.png);
+}
+h1 {
+	margin-top:200px;
+	color: #FEFEFE;
+	text-align:center;
+}
+.blueBtn {
+	color:#FEFEFE;
+	background: -moz-linear-gradient(center top , #00A9C8, #0065A5) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #00A9C8),color-stop(1,#0065A5));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00A9C8', endColorstr='#0065A5');
+	box-shadow: 0 0 2px #00A9C8;
+    border: 1px solid #00A9C8;
+    border-radius: 2px;
+    cursor: pointer;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	padding-bottom:3px;
+	text-align:center;
+}
+.blueBtn:active {
+	background: -moz-linear-gradient(center top, #0065A5, #00A9C8) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #0065A5),color-stop(1,#00A9C8));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0065A5', endColorstr='#00A9C8');
+}
+.blueBtn:hover {
+	border: 1px solid #0099C0;
+}
+.login {
+	position:relative;
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+	padding:10px;
+	border-radius: 2px;
+	box-shadow: 0 0 500px #00F;
+	
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EBEBEB', endColorstr='#DDDDDD');
+}
+.login div {
+	margin:6px;
+}
+.login .msg {
+	height:25px;
+	text-align:center;
+	color:red;
+}
+.login #uname, .login #upass{
+	width:220px;
+	height:25px;
+	font-size:16px;
+}
+.login .lable {
+	font-size:18px;
+	font-weight:bold;
+	color: #333;
+	text-shadow: 1px 0px 1px #999999 inherit;
+}
+.login .btnBox {
+	margin-top: 15px;
+	padding-right: 10px;
+	text-align:right;
+}
+.login #sendLogin{
+}
+.login #msg {
+	color:red;
+	text-align:center;
+}

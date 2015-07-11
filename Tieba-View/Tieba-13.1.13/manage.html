@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<link href="css/manage.css" rel="stylesheet" type="text/css" />
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div class="boder base">
+        <div id="top" class="base">
+            <h1>贴吧设置</h1>
+        </div>
+        <div id="center" class="base">
+            <div id="left">
+                <ul>
+                	<div class="menu-tit">
+                        <span>基本设置</span>
+                    </div>
+                    <li><span>贴吧称号</span></li>
+                    <li class="line"></li>
+                    <li><span>验证码规则</span></li>
+                    
+                    <div class="menu-tit">
+                        <span>会员管理</span>
+                    </div>
+                    <li><span>查找会员</span></li>
+                    <li class="line"></li>
+                    <li><span>会员列表</span></li>
+                    <li class="line"></li>
+                    <li><span>黑名单</span></li>
+                	
+                    <div class="menu-tit">
+                        <span>权限设置</span>
+                    </div>
+                    <li><span>小吧任命</span></li>
+                    <li class="line"></li>
+                    <li><span>权限分配</span></li>
+                    <li class="line"></li>
+                </ul>	
+            </div>
+            <div id="right">
+            	<!--
+            	<div class="cnt">
+                	<div class="c-tit">会员称号</div>
+                    <form>
+                        <div>
+                        	当前贴吧会员称号：德玛西亚       
+                            <span class="blueBtn">修改</span>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="cnt">
+                	<div class="c-tit">会员列表</div>
+                	<table>
+                    	<thead>
+                        	<tr>
+                            	<th>ID</th>
+                                <th>昵称</th>
+                                <th>等级</th>
+                                <th>加入本吧时间</th>
+                                <th>最后登录时间</th>
+                                <th>账号状态</th>
+                                <th>Manage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td>789</td>
+                                <td>消失的旧时光</td>
+                                <td>2</td>
+                                <td>2012.3.13</td>
+                                <td>2012.12.12</td>
+                                <td>可用</td>
+                                <td><span class="blueBtn">加入黑名单</span></td>
+                            </tr>
+                            <tr>
+                            	<td>789</td>
+                                <td class="uname">消失的旧时光</td>
+                                <td>2</td>
+                                <td>2012.3.13</td>
+                                <td>2012.12.12</td>
+                                <td>黑名</td>
+                                <td><span class="blueBtn">移出黑名单</span></td>
+                            </tr>
+                            <tr>
+                            	<td>789</td>
+                                <td>消失的旧时光</td>
+                                <td>2</td>
+                                <td>2012.3.13</td>
+                                <td>2012.12.12</td>
+                                <td>可用</td>
+                                <td>Mamage</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="page-ctrl">
+                    	<span id="prev">上一页</span>
+                        5
+                        <span id="next">下一页</span>
+                    </div>
+                    
+                    <script>
+                    	$(document).ready(function(e) {
+                            $(".add").click(function(e) {
+								$("#mask").show(0);
+                                $("#dialog").fadeIn(300);
+                            });
+							$(".close").click(function(e) {
+								$("#mask").hide(0);
+                                $("#dialog").fadeOut(300);
+                            });
+							
+                        });
+                    </script>
+                    <div class="cnt">
+                		<div id="mask"></div>
+                        <div class="c-tit">权限组管理</div>
+                        <ul id="pgm">
+                        	<span class="blueBtn">添加权限组</span>
+                            <div class="pg">吧主</div>
+                            <li>htp：隐藏帖子<span class="delete" title="删除此权限"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li class="add">添加权限</li>
+                            <div class="pg">吧主</div>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li>htp：隐藏帖子<span class="delete"></span></li>
+                            <li class="add">添加权限</li>
+                        </ul>
+                        <div id="dialog">
+                        	<div class="title"><h3>添加权限</h3><div class="close"></div></div>
+                            <div class="d-cnt">
+                                <ul class="power-list">
+                                	<li><input type="checkbox" />htp：隐藏帖子</li>
+                                    <li><input type="checkbox" />htp：隐藏帖子</li>
+                                    <li><input type="checkbox" />htp：隐藏帖子</li>
+                                    <li><input type="checkbox" />htp：隐藏帖子</li>
+                                    <li><input type="checkbox" />htp：隐藏帖子</li>
+                                </ul>
+                            </div>
+                            <div class="c-btm">
+                            	<span class="blueBtn">取消</span>
+                                <span class="blueBtn">添加选中项</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <div class="cnt">
+                	<div class=""></div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div id="bottom">版权所有：Glw</div>
+</body>
+</html>

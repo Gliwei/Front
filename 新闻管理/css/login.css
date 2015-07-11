@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../img/login_bg.png);	
+	font: 16px '微软雅黑',Helvetica,Arial,sans-serif;
+	color:#CCC;
+}
+#main {
+	text-align: center;
+	padding-top: 30px;
+}
+#head {
+	box-shadow: 3px 3px 5px #000;
+	margin-right: auto;
+	margin-left: auto;
+	height: 154px;
+	width: 122px;
+	border: 1px solid #0A0909;
+	background-image: url(../img/head.png);
+}
+#btnBox {
+	background-image: none;
+	text-align:right;
+	padding-top: 10px;
+}
+#btnBox img {
+	cursor:pointer;
+	margin-right:5px;
+}
+form div {
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/text.png);
+	height: 44px;
+	width: 322px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+form div img{
+	margin-left:20px;
+}
+form div p{
+	width:225px;
+	height:30px;
+	color:#FFF;
+	position: relative;
+	top: -5px;
+	right:0px;
+	background-image: url(../img/tip.png);
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 70px;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display:none;
+}
+input[type="text"] {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: url(../img/text_bg.png);
+	height: 37px;
+	width: 250px;
+	margin-left: 15px;
+	margin-top: 3px;
+	color: #CCC;
+	font-size: 18px;
+}
+input[type="password"] {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: url(../img/text_bg.png);
+	height: 37px;
+	width: 250px;
+	margin-left: 15px;
+	margin-top: 3px;
+	color: #CCC;
+	font-size: 18px;
+}

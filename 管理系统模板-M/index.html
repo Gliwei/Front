@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/manage.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<title>Manage</title>
+</head>
+
+<body class="s-green">
+	<div class="base">
+        <div id="top" class="base">
+            <h1><i class="icon-apple"></i> Looooooogo</h1>
+            <span class="full-screen" id="full-screen"><i class="icon-chevron-sign-left"></i></span>
+            <span class="full-screen"><i class="icon-archive"></i></span>
+            <ul>
+	            <li><i class="icon-gear"></i>Seting</li>
+            	<li><i class="icon-user"></i>Admin</li>
+                <li><i class="icon-unlink"></i>Logout</li>
+            </ul>
+        </div>
+        <div id="center" class="base">
+            <div id="left">
+                <ul>
+                    <div class="menu-tit" current="true">
+                        <i class="icon-usd"></i>
+                        <span>常用元素</span>
+                    </div>
+                    <li onclick="loadPage('table.html',this);">
+                    	<i class="icon-caret-right"></i>
+                        <span>简单表格</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('table-2.html',this);">
+                    	<i class="icon-caret-right"></i>
+                        <span>简单表格-2</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('sform.html',this);">
+                    	<i class="icon-caret-right"></i>
+                    	<span>简单表单</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('tform.html',this);">
+                    	<i class="icon-caret-right"></i>
+                    	<span>完全表单</span>
+                    </li>
+                </ul>
+                <ul>
+                    <div class="menu-tit" current="false">
+                    	<i class="icon-html5"></i>
+                        <span>扩展元素</span>
+                    </div>
+                    <li onclick="loadPage('ul.html',this);">
+                    	<i class="icon-caret-right"></i>
+                        <span>平铺列表</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('http://www.google.com.hk/',this);">
+                    	<i class="icon-caret-right"></i>
+                    	<span>待添aa加</span>
+                    </li>
+                    <li class="line"></li><li>
+                    	<i class="icon-caret-right"></i>
+                    	<span>待添加</span>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                    	<i class="icon-caret-right"></i>
+                    	<span>待添加</span>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                    	<i class="icon-caret-right"></i>
+                    	<span>待添加</span>
+                    </li>
+                </ul>
+                <ul>
+                    <div class="menu-tit"  current="false">
+                    	<i class="icon-css3"></i>
+                        <span>Others</span>
+                    </div>
+                    <li>
+                    	<i class="icon-caret-right"></i>
+                    	<span>lie over</span>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                    	<i class="icon-caret-right"></i>
+                    	<span>lie over</span>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                    	<i class="icon-caret-right"></i>
+                    	<span>lie over</span>
+                    </li>
+                </ul>	
+            </div>
+            <div id="right">
+            	<div class="r-cnt">
+                	<!-- 主要内容显示区域 -->
+                </div>
+            </div>
+           <!-- <div id="state-bar">State bar : 状态栏</div>-->
+        </div>
+     </div>
+</body>
+</html>

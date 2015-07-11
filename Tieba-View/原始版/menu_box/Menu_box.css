@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */       
+#container {
+	height:100%;
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*#menu_box {
+	background-image: url(nav.png);
+	background-repeat: repeat-x;
+	background-position: 0px -38px;
+	margin-top: 0px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+}*/
+
+#menu_box {
+	font-size: 93%;
+	line-height: normal;
+	list-style-type: none;
+	width: 980px;
+	background-image: url(menu_bg.png);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	float: left;
+}
+
+/*#menu_left {
+	background-image: url(nav.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	float: left;
+}
+#menu_right {
+	background-image: url(nav.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	float: right;
+}*/
+#menu_box ul {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	list-style: none;
+}
+#menu_box li {
+	display:inline;
+	margin: 0px;
+	padding: 0px;
+}
+#menu_box a {
+	float:left;
+	text-decoration:none;
+	background-image: url(nav.png);
+	background-repeat: no-repeat;
+	background-position: -10px -76px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 8px;
+}
+#menu_box a span {
+	display: block;
+	float: left;
+	background-image: url(nav.png);
+	background-repeat: no-repeat;
+	background-position: left -76px;
+	padding-top: 12px;
+	padding-right: 25px;
+	padding-bottom: 13px;
+	padding-left: 16px;
+	color: #CCCCCC;
+}
+#menu_box a:hover span {
+	color:#336600;
+}
+#menu_box a:hover {
+	background-position: left top;
+}
+#menu_box a:hover span {
+	background-position: right top;
+}
+#menu_box #current a {
+	background-position: left top;
+}
+#menu_box #current a span {
+	background-position: right top;
+	color:#003333;
+}
+#Refresh {
+	padding-top: 8px;
+	padding-right: 100px;
+	padding-bottom: 0px;
+	padding-left: 16px;
+	display: block;
+	float: right;
+}
+#Published {
+	display: block;
+	float: right;
+	padding-top: 8px;
+	padding-right: 25px;
+	padding-bottom: 0px;
+	padding-left: 16px;
+}
+

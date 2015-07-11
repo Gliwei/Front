@@ -1,0 +1,182 @@
+/* CSS Document */
+
+#uinfo-box, #tbinfo-box, #login-box, #like-box {
+	padding: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCC;
+}
+/******************** ! Like Box ! ********************/
+#like-box {
+	padding-top:20px;
+	box-shadow: 0 0 50px #F6F6F6 inset;
+}
+#like-box #like {
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:20px;
+	color:#F30;
+}
+#like-box #like img {
+	position:relative;
+	top:2px;
+	right:3px;
+	width:20px;
+}
+#like-box .explain {
+	margin-top:5px;
+	text-align:center;
+	color:#777777;
+}
+/******************** ! Login Box ! ********************/
+#login-box {
+	height:73px;
+}
+#login-box #login {
+	font-size:36px;
+	color:#06F;
+}
+#login-box #register {
+	margin-top:3px;
+	float:right;
+	color:#06F;
+	cursor:pointer;
+}
+/******************** ! U Info Box ! ********************/
+#uinfo-box {
+	background-color:#F6F6F6;
+	/*box-shadow: 0 0 50px #F6F6F6 inset;*/
+}
+#uinfo-box .header {
+	font-size:14px;
+	color:#999;
+}
+#uinfo-box .header .logout {
+	float:right;
+	color:#F00;
+	cursor:pointer;
+}
+#uinfo-box .content {
+	margin-top: 10px;
+}
+#uinfo-box .content .user-info {
+	height: 85px;
+}
+#uinfo-box .content .portrait {
+	float:left;
+	width:72px;
+	height:72px;
+	border-radius:2px;
+	box-shadow: 0 0 2px #0033FF;
+	overflow:hidden;
+}
+#uinfo-box .content .portrait img{
+	width:72px;
+}
+#uinfo-box .content .uname, .tit-wrap {
+	margin: 10px 0 0 85px;
+}
+#uinfo-box .content .tit-wrap {
+	position:relative;
+	text-align:left;
+	width:75px;
+	height:20px;
+	padding: 2px 5px 2px 5px;
+	border: 1px solid #999999;
+	background: -moz-linear-gradient(center top , #EBEBEB, #DDDDDD) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EBEBEB', endColorstr='#DDDDDD');
+	box-shadow: 0 0 2px #39F;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#uinfo-box .content .tit {
+	display:inline-block;
+	width:58px;
+	text-align:center;
+	color:#555555;
+}
+#uinfo-box .content .level {
+	position:absolute;
+	top:0;
+	right:0;
+	width:22px;
+	height:22px;
+	line-height:22px;
+	font-size:12px;
+	text-align:center;
+	background-image:url(../images/s1.gif);
+	background-repeat:no-repeat;
+	color:red;
+}
+#uinfo-box .content .exp-info {
+	line-height:15px;
+}
+#uinfo-box .content .exp-info .exp-label {
+	float:left;
+	color:#666666;
+	font-size:14px;
+}
+#uinfo-box .content .exp-info .exp-wrap {
+	position:relative;
+	height:15px;
+	width:160px;
+	border-radius: 2px;
+	overflow:hidden;
+	box-shadow: 0 0 2px #0033FF;
+}
+#uinfo-box .content .exp-info .exp-wrap .exp-bg {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	background: -moz-linear-gradient(center top , #9D9D9D , #AEAEAE ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #9D9D9D),color-stop(1, #AEAEAE));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#9D9D9D', endColorstr='#AEAEAE');
+}
+#uinfo-box .content .exp-info .exp-wrap .exp-text {
+	position:absolute;
+	z-index:30;
+	top:0;
+	left:0;
+	width:100%;
+	text-align:center;
+	color:#3333333;
+}
+#uinfo-box .content .exp-info .exp {
+	position:absolute;
+	z-index:20;
+	top:0;
+	left:0;
+	height:100%;
+	width:50px;
+	background: -moz-linear-gradient(center top , #F3A814 , #B66101 ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #F3A814),color-stop(1, #B66101));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F3A814', endColorstr='#B66101');
+}
+#uinfo-box .content .rank-self {
+	margin-top:10px;
+	font-size:12px;
+	color:#03F;
+}
+#uinfo-box .content .rank-self .num {
+	color:#C30;
+}
+#uinfo-box .content .rank-self .u-d {
+	color:red;
+}
+/******************** ! Tb Info Box ! ********************/
+#tbinfo-box {
+	color:#777777;
+}
+#tbinfo-box .label {
+	float:left;
+}
+#tbinfo-box a {
+	display:block;
+	margin-left:45px;
+}
+#tbinfo-box .num {
+	color:#C30;
+}

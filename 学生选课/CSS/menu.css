@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+#menu {
+	/*Menu外围容器*/
+	background-color: #FFF;
+	border: 1px dashed #CCC;
+	padding-top: 0px;
+	padding-right: 8px;
+	padding-bottom: 0px;
+	padding-left: 8px;
+}
+ul {
+	/*去掉列表的小圆点*/
+	padding: 0px;
+	list-style-type: none;	
+}
+.main {
+
+}
+li {
+	
+}
+a {
+	/*重定义超链接显示效果*/
+	padding-left: 20px;
+	text-decoration: none;
+	display: block;
+}
+.main a {
+	/*所有主菜单*/
+	color: #FFF;
+	background-image: url(../img/up.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #333;
+}
+.main li a{
+	/*所有子菜单*/
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-image: none;
+	color: #333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #FCF;
+}
+.main ul{
+	/*控制初始显隐*/
+	display: none;
+}

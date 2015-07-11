@@ -1,0 +1,49 @@
+/* CSS Document */
+.boder {
+	border: 1px dashed #666;	
+}
+.replyList {
+	font-size:14px;
+}
+.replyList li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C9C9C9;
+	margin-bottom:10px;
+}
+.replyList .tx {
+	background-image: url("../images/tt.jpg");
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px #666666;
+    height: 38px;
+    width: 38px;
+	display:inline-block;
+	float:left;
+}
+.replyList .replyer {
+	margin-left:47px;
+	text-align:left;
+	color:#00C;
+}
+.replyList .nr {
+	margin-left:47px;
+	text-align:left;	
+}
+.replyList .other {
+	font-size:12px;
+	color: #999999;
+}
+.replyList .hf {
+	color:#00C;
+}
+/*************************************/
+#bottomBar .text {
+	display:none;
+}
+#bottomBar .tip {
+	float:left;
+	color:#999;
+}
+#bottomBar .say {
+}

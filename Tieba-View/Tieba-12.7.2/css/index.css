@@ -1,0 +1,249 @@
+/* CSS Document */
+/* -- common -- */
+body {
+	font-family: '微软雅黑', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	background-image: url(../images/bg2.jpg);	
+}
+p {
+	padding:0;
+	margin:0;
+}
+ul , ul li {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.base {
+	margin-top:2px;
+	margin-bottom:2px;
+}
+.case {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+}
+/* -- common end-- */
+/* -- top -- */
+#top {
+	margin-bottom:10px;
+}
+#top .menubg {
+	/*圆角边框*/
+	-moz-border-radius: 25px; /*Firefox*/
+	-webkit-border-radius: 25px; /*Safari、Chrome*/
+	border-radius: 25px;
+	height:35px;
+	width:100%;
+	box-shadow: 0px 1px 2px #666666 inset;
+	
+}
+#top ul {
+	
+}
+.s{
+	/*圆角边框*/
+	-moz-border-radius: 25px; /*Firefox*/
+	-webkit-border-radius: 25px; /*Safari、Chrome*/
+	border-radius: 25px;
+	box-shadow: 0px 1px 2px #666666 ;
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+}
+#top li {
+	float:left;
+	height:26px;
+	margin:3px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:2px;
+}
+span.s {
+	float:right;
+	height:26px;
+	margin:3px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:2px;
+}
+/* -- top end -- */
+/* -- center -- */
+.left {
+	position:absolute;
+	width:790px;
+	
+	/*圆角边框*/
+	-moz-border-radius: 5px; /*Firefox*/
+	-webkit-border-radius: 5px; /*Safari、Chrome*/
+	border-radius: 5px;
+	
+	overflow:hidden;
+	border: 1px solid #dcdcdc;
+	box-shadow: 1px 1px 2px #666666;
+}
+.list {
+	
+}
+.list li {
+	padding: 10px;	
+}
+.list li .line2 {
+	margin-top:3px;
+	text-align:right;
+	font-size:14px;
+	color:#999;
+}
+.list .replyCount {
+	/*圆角边框*/
+	-moz-border-radius: 15px; /*Firefox*/
+	-webkit-border-radius: 15px; /*Safari、Chrome*/
+	border-radius: 15px;
+	box-shadow: 0px 1px 2px #666666 inset;
+	text-align:center;
+	width:40px;
+	position:absolute;
+	border: 1px double #DCDCDC;
+	margin: 3px;
+	font-size:14px;
+	color:#666666;
+}
+.list .title {
+	cursor:pointer;
+	color:#00C;
+	margin-left:60px;
+	display:block;
+}
+.odd {
+	background:#DCDCDC;
+	/*
+	box-shadow: 0px 1px 2px #666666 inset;
+	*/
+	background-image: url(../images/odd.png);
+	background-repeat: repeat-x;
+	
+}
+.even {
+	border-top:solid 1px #FFF;
+	/*background-image: url(../images/even.png);
+	background-repeat: repeat-x;*/
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	/*background-color:#DCDCDC;*/
+	box-shadow: 0px -1px 2px #666666;
+}
+.list li .title:hover {
+	color:#00F;
+}
+.right {
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	background-color:#DCDCDC;
+	margin-left:800px;
+	/*圆角边框*/
+	-moz-border-radius: 5px; /*Firefox*/
+	-webkit-border-radius: 5px; /*Safari、Chrome*/
+	border-radius: 5px;
+	border: 1px solid #dcdcdc;
+	overflow:hidden;
+	box-shadow: 1px 1px 2px #666666;
+	height:800px;
+	padding:5px;
+}
+.right hr {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #999;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+.right p {
+	font-size:14px;
+	color:#999;
+}
+.right .header {
+	/*圆角边框*/
+	-moz-border-radius: 5px; /*Firefox*/
+	-webkit-border-radius: 5px; /*Safari、Chrome*/
+	border-radius: 5px;
+	float:left;
+	width:80px;
+	height:80px;
+	border:1px solid #999;
+	padding:2px;
+}
+.info {
+	 margin-left:100px;
+}
+.info #id{
+	display:block;
+	padding-top:10px;
+	padding-bottom:15px;
+}
+.ex {
+	margin-top:30px;
+	background-color:#CCC;
+	width:100%;
+}
+.likeOther {
+	font-size:14px;
+	color:#0000CC;
+	height:65px;
+}
+.likeOther li{
+	float:left;
+	width:50%;
+	display:inline-block;
+}
+/* -- center end -- */
+/* -- bottom -- */
+#bottom {
+	background-color:#E1E1E1;
+	position:fixed;
+	bottom:0px;
+	width:985px;
+	padding-left:15px;
+}
+#bottom form{
+	display:none;
+}
+#bottom .fold {
+	position:absolute;
+	left:0px;
+	top:-5px;
+	width:1000px;
+	height:5px;
+	background-image: url(../images/bottomBg.jpg);
+	background-repeat: repeat-x;	
+}
+#bottom .fold .btn{
+	text-align:center;
+	cursor:pointer;
+	background-image:url(../images/bottomBtn.jpg);
+	background-repeat:no-repeat;
+	width:104px;
+	height:27px;
+	position:absolute;
+	right:0px;
+	top:-27px;
+}
+#bottom p{
+	width: 770px;
+}
+#bottom p input {
+	font-size:16px;
+	height: 25px;
+	width: 100%;	
+}
+#bottom p textarea {
+	margin-top:10px;
+	font-size:16px;
+	height: 120px;
+	width: 100%;	
+}
+#bottom p span {
+	color: #999;
+	float: left;
+}
+/* -- bottom end -- */

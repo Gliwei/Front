@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/remark-list.css" rel="stylesheet" type="text/css" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<ul id="list">
+
+    <div class="header">
+        <div class="title">标题！！！！！！！</div>
+        <div class="btn-box">
+            <div id="collect" class="grayBtn">收藏</div>
+            <div id="osh" class="grayBtn">只看楼主</div>
+            <div id="expansion" onclick="big(this)" class="rbtn">&nbsp;</div>
+        </div>
+        
+    </div>
+
+    <li>
+        <div class="uinfo">
+            <div class="portrait"><img src="images/tt.jpg" /></div>
+            <div class="uname">admin</div>
+            <div class="tit-wrap">
+                <span class="tit">小小码农</span>
+                <div class="level">2</div>
+            </div>
+        </div>
+        <div class="content">
+        	<!--<div class="host"></div>-->
+            <div class="text">评论</div>
+            <div style="text-align:right;color:#777777;font-size:13px">
+                1楼 | 2012-3-13
+            </div>
+<!--
+            <div class="reply">
+                <div class="fold">收起回复</div>
+                <ul class="reply-list">
+                    <li>
+                        <div class="portrait"><img src="images/tt.jpg" /></div>
+                        <div class="reply-cnt">
+                            <div class="reply-text">
+                            <a href="#">replyer</a>: 楼中楼~~~~~~~~~~~~~~~~~~~~~~</div>
+                            <div class="reply-info">2008-8-8 <a href="">回复</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="images/tt.jpg" /></div>
+                        <div class="reply-cnt">
+                            <div class="reply-text">
+                            <a href="#">replyer</a>: 楼中楼~~~~~~~~~~~~~~~~~~~~~~</div>
+                            <div class="reply-info">2008-8-8 <a href="">回复</a></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="reply-btm">
+                	<span class="tip">还有12条回复，<a href="">点击查看</a></span>
+                	<span id="say" class="grayBtn">我也说一句</span>
+                </div>
+                <div class="textbox">
+                	<form>
+                    	<textarea></textarea>
+                        <div class="textbox-ctrl">
+                        	<div>表情</div>
+                            <div class="submit blueBtn">发表</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sign">-!-sign-!--!-签名栏-!--!-sign-!-</div>
+-->
+        </div>
+    </li>
+    <li>
+        <div class="uinfo">
+            <div class="portrait"><img src="images/tt.jpg" /></div>
+            <div class="uname">admin</div>
+            <div class="tit-wrap">
+                <span class="tit">小小码农</span>
+                <div class="level">2</div>
+            </div>
+        </div>
+        <div class="content">
+        	<div class="host"></div>
+            <div class="text">评论</div>
+            <div class="cnt-info">
+                1楼 | 2012-3-13
+                <div class="fold" onclick="fold(this)">回复(5)</div>
+            </div>
+            <div class="reply">
+                <div class="reply-btm">
+                	<span class="tip">还有12条回复，<a href="">点击查看</a></span>
+                	<span class="grayBtn say" onclick="sayClick(this)">我也说一句</span>
+                    <div class="textbox">
+                	<form>
+                    	<textarea></textarea>
+                        <div class="textbox-ctrl">
+                        	<div>表情</div>
+                            <div class="submit blueBtn">发表</div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="sign">-!-sign-!--!-签名栏-!--!-sign-!-</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="uinfo">
+            <div class="portrait"><img src="images/tt.jpg" /></div>
+            <div class="uname">admin</div>
+            <div class="tit-wrap">
+                <span class="tit">小小码农</span>
+                <div class="level">2</div>
+            </div>
+        </div>
+        <div class="content">
+        	<div class="host"></div>
+            <div class="text">评论</div>
+            <div class="cnt-info">
+                1楼 | 2012-3-13
+                <div class="fold" onclick="fold(this)">收起回复</div>
+            </div>
+            <div class="reply">
+                <ul class="reply-list">
+                    <li>
+                        <div class="portrait"><img src="images/tt.jpg" /></div>
+                        <div class="reply-cnt">
+                            <div class="reply-text">
+                            <a href="#">replyer</a>:内容呢啊实打实的</div>
+                            <div class="reply-info">2008-8-8 <a href="">回复</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="images/tt.jpg" /></div>
+                        <div class="reply-cnt">
+                            <div class="reply-text">
+                            <a href="#">replyer</a>:内容呢啊实打实的</div>
+                            <div class="reply-info">2008-8-8 <a href="">回复</a></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="reply-btm">
+                	<span class="tip">还有12条回复，<a href="">点击查看</a></span>
+                	<span class="grayBtn say" onclick="sayClick(this)">我也说一句</span>
+                    <div class="textbox">
+                        <form>
+                            <textarea></textarea>
+                            <div class="textbox-ctrl">
+                                <div>表情</div>
+                                <div class="submit blueBtn">发表</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="sign">-!-sign-!--!-签名栏-!--!-sign-!-</div>
+        </div>
+    </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* CSS Document */
+.boder {
+    border: 1px dashed #666666;
+}
+.center {
+    margin: 5px auto;
+}
+#headMenu {
+    background: none repeat scroll 0 0 #EBEBEB;
+    height: 25px;
+    padding: 5px;
+}
+#headMenu .btnBox {
+    float: right;
+    font-size: 14px;
+}
+#headMenu .btnBox li {
+    
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.row {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #C9C9C9;
+    position: relative;
+    width: 790px;
+}
+.row .userInfo {
+    background-color: #DBDBDB;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+}
+.row .header {
+    background-image: url("../images/tt.jpg");
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px #666666;
+    height: 80px;
+    margin-top: 10px;
+    width: 80px;
+}
+.row .id {
+    text-align: center;
+    width: 80px;
+}
+.row .title {
+    width: 80px;
+}
+.row .content {
+	position:relative;
+    margin-left: 150px;
+    padding: 10px;
+}
+.row .remark {
+    min-height: 150px;
+    padding-bottom: 10px;
+}
+.row .reply {
+    font-size: 14px;
+    position: relative;
+    text-align: right;
+}
+.row .about {
+    color: #999999;
+    display: inline-block;
+    padding: 3px;
+}
+.row .firstAbout {
+	font-size: 14px;
+    color: #999999;
+    padding: 3px;
+	text-align:right;
+}
+.row .replys {
+    background-color: #DBDBDB;
+    border: 1px solid #C9C9C9;
+    padding: 10px;
+    position: relative;
+    top: -2px;
+    width: 598px;
+}
+.row .up {
+    background-color: #DBDBDB;
+    border-left: 1px solid #C9C9C9;
+    border-right: 1px solid #C9C9C9;
+    border-style: solid solid none;
+    border-top: 1px solid #C9C9C9;
+}
+.foldReply {
+    color: #0000CC;
+    cursor: pointer;
+    float: right;
+    padding: 2px;
+    position: relative;
+    text-align: center;
+    width: 60px;
+    z-index: 55;
+}
+.pages {
+    background-color: #DBDBDB;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+}
+.pages ul {
+}
+.pages ul li {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px #666666 inset;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.pages ul li:hover {
+    background: -moz-linear-gradient(center top , #F3A814, #B66101) repeat scroll 0 0 #CCCCCC;
+    box-shadow: 0 0 1px #666666;
+}
+.pages ul li:active {
+    background: -moz-linear-gradient(center top ,#B66101 , #F3A814) repeat scroll 0 0 #CCCCCC;
+    box-shadow: 0 0 1px #666666;
+}
+.sp {
+    background: -moz-linear-gradient(center top , #F3A814, #B66101) repeat scroll 0 0 #CCCCCC;
+    box-shadow: 0 0 1px #666666;
+}
+.replys .text {
+	display:none;
+}
+.replys textarea {
+	margin-top:10px;
+	margin-bottom:10px;
+	display:block;
+	width:590px;
+	height:50px;
+}
+.replys .submit {
+	background: -moz-linear-gradient(center top , #4794D8, #266EBC) repeat scroll 0 0 transparent;
+    border: 1px solid #03F;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+.replys .submit:active {
+	background: -moz-linear-gradient(center top ,#266EBC , #4794D8) repeat scroll 0 0 transparent;
+}
+.replys .submit:hover {
+	border: 1px solid #30C;
+}

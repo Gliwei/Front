@@ -1,0 +1,550 @@
+* {
+	position: relative;
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight:100;
+	text-decoration:none;
+	color: inherit;
+}
+/**************** 标题和标题栏的搜索框、按钮样式 **************/
+.c-tit {
+	font-size: 20px;
+	line-height: 35px;
+	height: 35px;
+	color:#999999;
+	border-bottom: 2px solid #F2F2F2;
+	margin-bottom: 15px;
+	background-color: #FFF;
+}
+.c-tit .text {
+	float: left;
+	line-height: 35px;
+	height: 35px;
+	padding: 0 10px;
+	border-bottom: 2px solid #009;
+}
+.c-tit .text:hover {
+	color: #88888;
+	border-bottom: 2px solid #00C;
+}
+/**************标题栏 搜索框样式**************/
+.c-tit .search-box {
+	position: relative;
+	height: 20px;
+	display: inline-block;
+	line-height:normal;
+	font-size:14px;
+	font-weight:300;
+	margin-top: 10px;
+	margin-left:20px;
+	padding: 0 0 0 5px;
+	background-color: #F2F2F2;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.c-tit .search-box input[type=text] {
+	width: 70px;
+	margin: 0;
+	border: 0 none;
+	background-color: #EBEBEB;
+	height: 100%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.c-tit .search-box .sbtn {
+	display: block;
+	float: right;
+	height: 100%;
+	background-color: #06F;
+	padding: 0 5px;
+	color: #FAFAFA;
+	cursor: pointer;
+}
+.c-tit .search-box .sbtn:hover {
+	background-color: #03F;
+	color: #FFFFFF;
+}
+.c-tit .search-box .cbtn {
+	display: block;
+	float: right;
+	height: 100%;
+	background-color: #6C9;
+	padding: 0 5px;
+	color: #FAFAFA;
+	cursor: pointer;
+}
+.c-tit .search-box .cbtn:hover {
+	background-color: #6C6;
+	color: #FFFFFF;
+}
+/*********标题栏 过滤框样式*****************/
+.c-tit .filter-box {
+	float: right;
+	margin: 4px 0 0 3px;
+}
+.c-tit .filter-box input {
+	color: #C00;
+	width: 120px;
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+}
+/**********标题栏 右侧图标样式***************/
+.c-tit .right-icon {
+	float:right;
+	height: 28px;
+	line-height: 28px;
+	padding: 7px 5px 0 5px;
+	margin-left: 5px;
+	border-bottom: 2px solid #C00;
+	cursor: pointer;
+}
+.c-tit .bath-del {
+	border-bottom: 2px solid red;
+}
+.c-tit .right-icon:hover {
+	color: #666;
+	/*text-shadow: 1px 0px 2px rgba(51,51,51,0.3);*/
+	border-bottom: 2px solid #C03;
+}
+.c-tit .right-icon:active {
+	color: #333;
+	text-shadow: none;
+	border-bottom: 2px solid #C03;
+}
+/******************表格样式********************/
+div.simple-table-wrap {
+	position: relative;
+}
+table.simple-table {
+	width: 100%;
+	color:#333333;
+	text-align:center;
+	border-collapse: collapse;
+}
+table.simple-table th {
+	line-height: 30px;
+	height: 30px;
+	border-bottom: 1px solid #F2F2F2;
+	cursor: default;
+}
+table.simple-table td {
+	line-height: 30px;
+	height: 30px;
+	border-bottom: 1px dotted #F2F2F2;
+	overflow: hidden;
+}
+table.simple-table tbody tr:hover {
+	background-color: #FAFAFA;
+}
+table.simple-table .uname {
+	color: blue;
+	cursor: pointer;
+}
+table.simple-table img {
+	cursor: pointer;
+	margin: 0 2px;
+}
+table.simple-table #mth {
+	background-color: #CC3;
+	color: #FFF;
+	cursor: pointer;
+}
+table.simple-table #mth i {
+	position: relative;
+	top: 1px;
+	font-size:18px;
+}
+table.simple-table i {
+	font-size: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+table.simple-table i:hover {
+	color: #00F;
+}
+table.simple-table i:active {
+	color: #666;
+}
+table.simple-table tr.editing {
+	background-color: #FAFAFA;
+	border-radius: 3px;
+}
+table.simple-table td input[type=text], table.simple-table td input[type=password] {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	width: 100%;
+	height: 100%;
+	line-height: 30px;
+	text-align: center;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+table.simple-table td input[type=text]:focus, table.simple-table td input[type=password]:focus {
+	
+	box-shadow: 0 1px 2px rgba(0, 0, 255, 0.2) inset;
+}
+
+table.simple-table td select {
+	margin: 0;
+	border: 0 none;
+	width: 100%;
+	padding: 6px;
+	vertical-align: auto;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+table.simple-table .highlight {
+	color: #C00;
+	font-weight:900;
+}
+table.simple-table .checked {
+	border-bottom: 1px #0FF dashed;
+}
+table.simple-table .th-hover {
+	background-color: #FAFAFA;
+}
+/******************分页样式*****************/
+.page-ctrl {
+	text-align:right;
+	padding-right:20px;
+	margin-top:10px;
+}
+.page-ctrl .pageinfo {
+	float: left;
+	color: #666666;
+}
+.page-ctrl .pageinfo .num {
+	margin: 0 2px;
+	color: #333333;
+	font-weight: 600;
+}
+.page-ctrl .pageinfo .page-size {
+	border: 0 none;
+	border-bottom: 1px solid #EBEBEB;
+	padding: 0;
+	width: 25px;
+	text-align: center;
+	color: #333;
+	font-weight: 600;
+	margin: 0 2px;
+}
+.page-ctrl .page, .page-ctrl .prev, .page-ctrl .next {
+	-moz-user-select: none;/*文字不可被选中*/
+	position: relative;
+	border-radius: 2px;
+	color: #333333;
+	background-color: #EBEBEB;
+	padding: 1px 5px;
+	font-weight:400;
+	margin: 0 5px;
+	cursor:pointer;
+}
+.page-ctrl .page:hover, .page-ctrl .prev:hover, .page-ctrl .next:hover {
+	color: #006;
+	background-color: #EEEEEE;
+}
+.page-ctrl .page:active, .page-ctrl .prev:active, .page-ctrl .next:active {
+	color: #000;
+	background-color: #DDDDDD;
+}
+.page-ctrl .pageon {
+	border-radius: 2px;
+	color: #F7F7F7;
+	background-color: #333333;
+	padding: 0 5px;
+}
+/************列表样式*****************/
+ul.flat {
+	padding: 0 15px;
+}
+ul.flat .title {
+	display: block;
+	font-size:20px;
+	color:#666666;
+	border-bottom: 1px solid #F2F2F2;
+	padding-bottom: 3px;
+	margin-top: 5px;
+}
+ul.flat li {
+	position: relative;
+	min-width:117px;
+	font-size:14px;
+	display:inline-block;;
+	padding: 3px 5px;
+	margin: 5px 2px 0 2px;
+	border: 1px dashed #CCC;
+	border-radius: 2px;
+	color:#666666;
+}
+ul.flat li:hover {
+	color:#333333;
+	border: 1px dashed blue;
+}
+ul.flat li .delete {
+	position: absolute;
+	right: 5px;
+	color: #CCCCCC;
+	font-size: 18px;
+	cursor: pointer;
+}
+ul.flat li .delete:hover {
+	color: #006;
+}
+ul.flat li.add {
+	text-align:center;
+	color: #666666;
+	cursor: pointer;
+}
+ul.flat li.add:hover {
+	color: #00F;
+}
+/***************表单******************/
+form.simple-form .input-wrap, form.simple-form .tarea-wrap {
+	/* [disabled]display: inline-block; */
+	position: relative;
+	margin: 10px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+form.simple-form .input-wrap label {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	border-radius: 3px 0 0 3px;
+	line-height: 25px;
+	height: 25px;
+	font-weight:700;
+	color: #C0FFFF;
+	border: 0 none;
+	background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');
+}
+form.simple-form .tarea-wrap label {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	border-radius: 3px 0 0 3px;
+	line-height: 100px;
+	height: 100px;
+	font-weight:700;
+	color: #C0FFFF;
+	border: 0 none;
+	background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');
+}
+form.simple-form .tarea-wrap textarea {
+	height: 100px;
+	width: 250px;
+	resize: none;
+	border: 0 none;
+	border-radius: 0 3px 3px 0;
+	padding: 0 3px;
+	margin: 0;
+	background-color: #EEEEEE;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	border-color: #DADADA;
+}
+form.simple-form .input-wrap input {
+	height: 25px;
+	line-height: 25px;
+	width: 250px;
+	border-radius: 0 3px 3px 0;
+	padding: 0 3px;
+	border: 0 none;
+	background-color: #EEEEEE;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+form.simple-form .input-wrap select {
+	height: 25px;
+	border-radius: 0 3px 3px 0;
+	padding: 3px;
+	border: 0 none;
+	background-color: #EEEEEE;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+form.simple-form input[type=submit], form.simple-form input[type=reset] {
+	color: #FAFAFA;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin: 0 10px;
+	border: 0 none;
+	background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');
+}
+form.simple-form input[type=submit]:hover, form.simple-form input[type=reset]:hover {
+	background: linear-gradient(to bottom, #4B84B6 0%, #06619B 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4B84B6', endColorstr='#06619B');
+}
+form.simple-form input[type=submit]:active, form.simple-form input[type=reset]:active {
+	box-shadow: 0 0 3px #333 inset;
+	background: linear-gradient(to bottom, ##3301FF 0%, #0360CF 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3301FF', endColorstr='#0360CF');
+}
+form.simple-form .info {
+	font-size: 14px;
+	margin-left: 10px;
+}
+/**************/
+table.table-form {
+	width: 100%;
+	color:#333333;
+	text-align: center;
+	border-collapse: collapse;
+	background-color: #FAFAFA;
+	
+	position: relative;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+table.table-form:before, table.table-form:after {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 8px;
+	bottom: 10px;
+	width: 70%;
+	max-width: 400px; /* avoid rotation causing ugly appearance at large container widths */
+	max-height: 500px;
+	height: 70%;
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	/*旋转元素*/
+	-webkit-transform: skew(-5deg) rotate(-3deg);
+	-moz-transform: skew(-5deg) rotate(-3deg);
+	-ms-transform: skew(-5deg) rotate(-3deg);
+	-o-transform: skew(-5deg) rotate(-3deg);
+	transform: skew(-5deg) rotate(-3deg);
+}
+table.table-form:after {
+	left: auto;
+	right: 8px;
+	-webkit-transform: skew(5deg) rotate(3deg);
+	-moz-transform: skew(5deg) rotate(3deg);
+	-ms-transform: skew(5deg) rotate(3deg);
+	-o-transform: skew(5deg) rotate(3deg);
+	transform: skew(5deg) rotate(3deg);
+}
+table.table-form th {
+	font-size: 14px;
+	font-weight:600;
+	padding: 0;
+	margin: 0;
+	line-height: 35px;
+	height: 35px;
+	border: 1px solid #EEEEEE;
+}
+table.table-form td {
+	padding: 0;
+	margin: 0;
+	line-height: 30px;
+	height: 30px;
+	border: 1px solid #EEEEEE;
+}
+table.table-form input[type=text] {
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	width: 100%;
+	height: 100%;
+	line-height: 30px;
+}
+table.table-form textarea {
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	width: 100%;
+	height: 230px;
+	resize: vertical;
+}
+table.table-form select {
+	padding: 6px;
+	margin: 0;
+	border: 0 none;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	width: 100%;
+	line-height: 30px;
+}
+table.table-form input[type=text]:focus, table.table-form textarea:focus, table.table-form select:focus {
+	box-shadow: 0 1px 2px rgba(0, 0, 255, 0.2) inset;
+}
+table.table-form .btn {
+	font-weight:900;
+	width: 100%;
+	height: 100%;
+	color: #333333;
+	cursor: pointer;
+	border: 0 none;
+	background: linear-gradient(to bottom, #FAFAFA 0%, #EEEEEE 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FAFAFA', endColorstr='#EEEEEE');
+}
+table.table-form .btn:hover {
+	background: linear-gradient(to bottom, #FCFCFC 0%, #F1F1F1 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FCFCFC', endColorstr='#F1F1F1');
+}
+table.table-form .btn:active {
+	box-shadow: 0 0 3px rgba(0, 0, 0,0.1) inset;
+	background: linear-gradient(to bottom, #F9F9F9 0%, #F2F2F2 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F9F9F9', endColorstr='#F2F2F2');
+}
+/*******************************************************/
+.tooltip {
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0 1px rgba( 0, 0, 0, 0.5 );
+	line-height: 1.5;
+	color: #fff;
+	background: #333;
+	background: -webkit-gradient( linear, left top, left bottom, from( rgba( 0, 0, 0, .6 ) ), to( rgba( 0, 0, 0, .8 ) ) );
+	background: -webkit-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -moz-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -ms-radial-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -o-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-top: 1px solid #fff;
+	-webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	-moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	position: absolute;
+	z-index: 100;
+	padding: 10px;
+}
+.tooltip:after {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #333;
+	border-top-color: rgba( 0, 0, 0, .7 );
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -10px;
+	margin-left: -10px;
+}
+.tooltip.top:after {
+	border-top-color: transparent;
+	border-bottom: 10px solid #333;
+	border-bottom-color: rgba( 0, 0, 0, 0.6 );
+	top: -20px;
+	bottom: auto;
+}
+.tooltip.left:after {
+	left: 10px;
+	margin: 0;
+}
+.tooltip.right:after {
+	right: 10px;
+	left: auto;
+	margin: 0;
+}

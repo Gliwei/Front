@@ -1,0 +1,110 @@
+/* CSS Document */
+body,ul,li,p,h1,h2,h3,h4,h5,a {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight:100;
+	text-decoration:none;
+}
+
+body {
+	background-image:url(../images/zz.png);
+	background-repeat:repeat;
+	background-color:#CCC;
+}
+.base {
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.proBtn {
+	position:relative;
+	top: -2px;
+	display: inline-block;
+	background: -moz-linear-gradient(center top , #CECFCA, #8E8F91) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EBEBEB', endColorstr='#DDDDDD');
+	box-shadow: 0 0 2px #CECFCA;
+    border: 1px solid #CECFCA;
+    border-radius: 2px;
+    cursor: pointer;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	padding-bottom:3px;
+	text-align:center;
+	color:#51514F;
+	font-weight:900;
+	min-height:30px;
+	line-height:30px;
+	width:60px;
+	text-shadow: 0 0 6px #CCCCCC;
+}
+.proBtn:active {
+	background: -moz-linear-gradient(center top , #DDDDDD, #EBEBEB) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #DDDDDD),color-stop(1, #EBEBEB));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DDDDDD', endColorstr='#EBEBEB');
+}
+.proBtn:hover {
+	color: #00F;
+}
+#search-box input[type='text'] {
+	margin-right: 10px;
+	font-size:16px;
+	width:500px;
+	height:30px;
+	line-height:30px;
+	box-shadow: 0 0 2px  #8E8F91;
+}
+#search-box input[type='text']:focus {
+	box-shadow: 0 0 2px  #00F;
+}
+/******************************************/
+
+.wrap {
+	position:relative;
+	text-align:center;
+	margin-top: 150px;
+	border: 3px solid #999;
+	border-radius: 2px;
+	padding:10px;
+	box-shadow: 0 0 2px #333;
+	background: -moz-linear-gradient(center top , #EBEBEB, #DDDDDD) repeat scroll 0 0 transparent;
+}
+.wrap h1 {
+	width:600px;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 30px;
+	color:#666666;
+}
+.wrap .recommend {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	margin-top:10px;
+	width:595px;
+}
+.wrap .recommend h3 {
+	color: #666666;
+	border-bottom: 2px solid #CCC;
+}
+.wrap .recommend li {
+	line-height: 20px;
+	padding: 2px 5px 0 5px;
+	border-radius: 2px;
+	background-color: #F96;
+	margin-top: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#FAFAFA;
+}
+.shadow {
+	margin-top:5px;
+	width:700px;
+	height:55px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../images/ltyy.png);
+}

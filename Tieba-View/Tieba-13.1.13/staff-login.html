@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/staff-login.css" rel="stylesheet" type="text/css" />
+<title>内部人员登录</title>
+<script>
+$(document).ready(function(e) {
+    $("#sendLogin").click(function(e) {
+        var postData = $("#NP").serialize();
+		$.post("/tb/s/login",postData,function(data){
+			var msg = data.msg;
+			if(msg == "success"){
+				location.href = data.url;
+			} else {
+				$("#NP .msg").html(msg);
+			}
+		},"json").error(function(textStatus, jqXHR){
+			$("#NP .msg").html("未知错误："+textStatus+jqXH);
+		});
+    });
+});
+</script>
+</head>
+
+<body>
+	<h1>内部人员登录窗口</h1>
+	<div class="login">
+    <form id="NP">
+    	<div class="msg"></div>
+    	<div><label class="lable" for="id">工号：</label><input type="text" name="id" id="id"/></div>
+        <div><label class="lable" for="password">密码：</label><input type="password" name="password" id="password"/></div>
+        <div class="btnBox">
+        	<span id="sendLogin" class="blueBtn">登录</span>
+        </div>
+    </form>
+</div>
+</body>
+</html>

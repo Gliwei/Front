@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>贴吧首页</title>
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="top"><!--头部分-->
+<div></div>
+<div id="menu_box"><!--start menu_box-->
+    <ul>
+      <li id="First"><span>贴吧</span></li>
+      <li><span>精品区</span></li>
+      <li><span>热帖</span></li>
+      <li><span>IT</span></li>
+      <li><span>Other</span></li>
+    </ul>
+</div><!--end menu_box-->
+</div><!--头部分结束-->
+
+<div id="center"><!--中间部分-->
+<div id="right">内容右侧</div>
+<div id="left">
+<p><img src="img/loading.gif" alt="装载中..." /><br />&nbsp;&nbsp;装载中...</p>
+<div id="content"><!-- 内容 --></div>
+</div>
+</div><!--中间部分结束-->
+
+<div id="bottom"><!--底部发帖部分-->
+    <form action="post.do" method="post" name="ok">
+      <p>
+      <span>发表新帖：</span>
+      <input type="hidden" name="sid" value="<%=sid %>"/>
+      <input type="text" name="title" value="标题"/>
+      </p>
+      <p><textarea name="content" >内容..</textarea></p>
+    </form>
+</div><!--底部发帖部分结束-->
+</body>
+</html>

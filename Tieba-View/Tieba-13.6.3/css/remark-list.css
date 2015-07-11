@@ -1,0 +1,242 @@
+/* CSS Document */
+ul,li,p,h1,h2,h3,h4,h5,a,textarea,input {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight:100;
+	text-decoration:none;
+	resize:none;
+}
+.rbtn {
+	background-image:url(../images/r.png);
+	background-repeat: no-repeat;
+	width:25px;
+	padding:2px 0 3px 0;
+	border-radius:25px;
+	border:1px solid #C2C2C2;
+	box-shadow: 0 0 2px #CCCCCC;
+	cursor:pointer;
+}
+.rbtn:hover {
+	box-shadow: 0 0 2px #AAAAAA;
+}
+.lbtn {
+	background-image:url(../images/l.png);
+	background-repeat: no-repeat;
+	width:25px;
+	padding:2px 0 3px 0;
+	border-radius:25px;
+	border:1px solid #C2C2C2;
+	box-shadow: 0 0 2px #CCCCCC;
+	cursor:pointer;
+}
+.lbtn:hover {
+	box-shadow: 0 0 2px #AAAAAA;
+}
+#list #expansion {
+	margin-left:5px;
+}
+#list {
+	/*border: 1px solid #A5A6A5;*/
+	border-radius: 2px;
+	background-color:#DCDCDC;
+	font-size:14px;
+}
+#list li {
+	border-bottom:1px solid #999;
+	overflow:hidden;
+}
+#list .header {
+	position:relative;
+	z-index:30;
+	height:35px;
+	line-height:35px;
+	padding: 0 10px 0 10px;
+	box-shadow: 0 0 3px #666666;
+	border-top: solid 1px #DCDCDC;
+	color:#333333;
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EBEBEB', endColorstr='#DDDDDD');
+}
+#list .header .title {
+	display:inline-block;
+}
+#list .header .btn-box {
+	float:right;
+}
+#list .header .btn-box div {
+	display:inline-block;
+	line-height:19px;
+	color:#6D6D6D;
+	box-shadow: 0 0 2px #CCCCCC;
+	border:1px solid #C2C2C2;
+}
+#list .uinfo {
+	display:block;
+	float:left;
+	width:130px;
+	height:100%;
+	padding: 20px 0 0 0;
+	text-align:center;
+}
+#list .uinfo .portrait {
+	width:72px;
+	height:72px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:2px;
+	box-shadow: 0 0 2px #0033FF;
+	overflow:hidden;
+}
+#list .uinfo .uname, .tit-wrap {
+	margin-top:10px;
+}
+#list .uinfo .tit-wrap {
+	position:relative;
+	text-align:left;
+	width:75px;
+	height:20px;
+	padding: 2px 5px 2px 5px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid #999999;
+	background: -moz-linear-gradient(center top , #EBEBEB , #DDDDDD ) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EBEBEB),color-stop(1, #DDDDDD));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EBEBEB', endColorstr='#DDDDDD');
+	box-shadow: 0 0 2px #39F;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#list .uinfo .tit {
+	display:inline-block;
+	width:58px;
+	text-align:center;
+	color:#555555;
+	font-size:14px;
+}
+#list .uinfo .level {
+	position:absolute;
+	top:0;
+	right:0;
+	width:22px;
+	height:22px;
+	line-height:22px;
+	font-size:12px;
+	text-align:center;
+	background-image:url(../images/s1.gif);
+	background-repeat:no-repeat;
+	color:red;
+}
+
+#list .content {
+	position:relative;
+	margin-left:130px;
+	padding:20px 15px 7px 15px;
+	background-color:#EBEBEB;
+	box-shadow: 0 0 130px #EBEBEB;
+}
+#list .content .host {
+	position:absolute;
+	top:0;
+	right:0;
+	width:36px;
+	height:36px;
+	background-image:url(../images/host.png);
+	background-repeat:no-repeat;
+}
+#list .content .text {
+	min-height:170px;
+}
+#list .content .cnt-info {
+	position:relative;
+	padding-right:80px;
+	line-height:20px;
+	text-align:right;
+	color:#999;
+	font-size:13px;
+}
+#list .content .cnt-info .fold {
+	z-index:10;
+	position:absolute;
+	top:0;
+	right:0;
+	width:70px;
+	text-align:center;
+	color:#00F;
+	cursor:pointer;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	background-color:#DCDCDC;
+	border-radius:2px 2px 0 2px;
+}
+#list .content .cnt-info .up {
+	border:none;
+	background-color:transparent;
+}
+#list .content .reply {
+	position:relative;
+	border: 1px solid #CCC;
+	padding:10px;
+	margin-bottom:15px;
+	background-color:#DCDCDC;
+	border-radius: 2px 0 2px 2px;
+}
+#list .content .reply li {
+	border-bottom: 1px dashed #999;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+#list .content .reply .portrait {
+	float:left;
+	width:32px;
+	height:32px;
+	border-radius:2px;
+	box-shadow: 0 0 2px #0033FF;
+	overflow:hidden;
+}
+#list .content .reply .portrait img {
+	width:32px;
+}
+#list .content .reply .reply-cnt {
+	margin-left:40px;
+}
+#list .content .reply .reply-cnt .reply-text {
+	word-break:break-all;
+}
+#list .content .reply .reply-cnt .reply-info {
+	text-align:right;
+	color:#999999;
+	font-size:13px;
+}
+#list .content .sign {
+	border-top: 1px dashed #CCCCCC;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+#list .content .reply .reply-btm {
+	position:relative;
+}
+#list .content .reply .reply-btm .tip {
+	line-height:25px;
+	color:#999;
+}
+#list .content .reply .reply-btm .say {
+	float:right;
+}
+#list .content .reply .textbox {
+	height:89px;
+}
+#list .content .reply .textbox textarea {
+	font-size:14px;
+	width:100%;
+	height:40px;
+	margin:10px 0 10px 0;
+}
+#list .content .reply .textbox .textbox-ctrl {
+	float:right;
+}
+#list .content .reply .textbox div {
+	display:inline-block;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>左右滑动-jquery  +++++  by:WebStarting</title>
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script language="javascript" type="text/javascript">
+var sWidth = 80;//单个容器宽度(包括边距，填充),PS:每次位移距离
+var visible = 10;//显示数量
+var mr = 0; //向左移动的图片个数（为负值）
+var bWidth ;//容器宽度
+var listLength ;//列表图片个数
+var listWidth ;//列表宽度
+var listLeft ;//列表位置
+var bId; //大容器ID
+var listId;//列表ID
+var trendLeft;//变化侧栏值
+var maxMr;
+function init(){
+bId = $("#bigDiv");
+listId = $("#myList");
+bWidth = bId.width();
+listLength = listId.find("li").length;
+listWidth = listLength*sWidth;
+listLeft =parseInt(listId.css('left'));
+}
+function picList(fx){
+init();
+maxMr = listLength - visible ;
+if(listWidth>bWidth){
+if(fx=='next'){
+if(-mr < maxMr){
+mr--;//每次移动的个数如果我们要移动7个，则为 mr = mr-7;
+trendLeft = mr*sWidth;
+listId.animate({
+left:trendLeft + "px"
+},200);
+}
+}else if(fx=='pre'){
+
+if( mr < 0){
+mr++;
+trendLeft = mr*sWidth;
+listId.animate({
+left:trendLeft + "px"
+},200);
+}
+}
+}
+
+
+if(-mr==maxMr){
+$("input#btnNext").attr("disabled","disabled");
+}else if(mr==0){
+$("input#btnPre").attr("disabled","disabled");
+}else{
+$("input#btnNext").attr("disabled","");
+$("input#btnPre").attr("disabled","");
+}
+
+}
+$(function(){
+picList();   //初始化
+})
+</script>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+ul, li {
+	list-style:none;
+}
+.btn {
+	margin-top:30px;
+}
+.lf {
+	float:left;
+}
+.mainDiv {
+	width:800px;
+	height:80px;
+	position:relative;
+	overflow:hidden;
+	color:#fff;
+	background:#000;
+	margin:0 auto;
+}
+.mainDiv ul#myList {
+	position:absolute;
+	left:0px;
+	z-index:2;
+	top:10px;
+	width:20000px;
+}
+.mainDiv ul#myList li {
+	width:68px;
+	height:58px;
+	border:1px solid #ccc;
+	background:#444;
+	float:left;
+	margin:0 5px;
+	line-height:58px;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<input type="button" class="lf btn" onclick="picList('pre')" value="上一个" id="btnPre"  />
+<div class="mainDiv lf" id="bigDiv">
+  <ul id="myList" style="left:0">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>16</li>
+    <li>16</li>
+    <li>16</li>
+    <li>16</li>
+    <li>16</li>
+    <li>16</li>
+  </ul>
+</div>
+<input type="button" class="lf btn" onclick="picList('next')" value="下一个" id="btnNext" />
+</body>
+</body>
+</html>

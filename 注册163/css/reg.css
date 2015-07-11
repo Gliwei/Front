@@ -1,0 +1,186 @@
+h1,h2,h3,h4,h5,h6,ul,li,body {
+	padding: 0;
+	margin: 0; 
+}
+body {
+	background-color: #FFFFFF;
+}
+select {
+
+    color: #555555;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px;
+}
+select option {
+	background-color: #FFFFFF;
+}
+.base {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#top {
+	height: 80px;
+}
+#center {
+}
+.wrap {
+	height: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #E0E0E0;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+#center #title {
+	height: 26px;
+	color: #FFFFFF;
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	/*渐变背景色*/
+	background-image: -moz-linear-gradient(top, #6FA0D3, #5686B5); /* Firefox 3.6 */
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #6FA0D3),color-stop(1, #5686B5)); /* Safari & Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6FA0D3', endColorstr='#5686B5'); /* IE6 & IE7 */ 
+	
+}
+#center #content {
+	position: relative;
+	border: 1px solid #E0E0E0;
+}
+#center .left {
+	width: 640px;
+	padding: 50px 0 0 60px;
+}
+#tab {
+	margin: 0 0 20px 85px;
+	display: inline-block;
+	background-image: url("../images/glb_v2.png");
+	background-position: -360px -432px;/*0 -432px;*/
+	text-align: center;
+	cursor: pointer;
+}
+#tab span {
+	display: inline-block;
+	width: 168px;
+	height: 35px;
+	line-height: 35px;
+}
+.regFormRow {
+	position: relative;	
+}
+.regFormRowTit {
+	font-size: 14px;
+	color: #555555;
+    left: 0;
+    position: absolute;
+    text-align: right;
+    top: 8px;
+    width: 75px;
+}
+.regFormCnt {
+	margin: 20px 0 20px 85px;
+}
+.regFormTip {
+	color: #CCCCCC;
+	font-size: 12px;
+	line-height: 16px;
+    padding: 6px 0 4px;
+}
+.ipt {
+	border: 1px solid #ABABAB;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 3px #EDEDED inset;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 5px;
+    background-color: #FFFFFF;
+}
+.vcode {
+	position: absolute;
+	top: -10px;
+	left: 295px;
+	width: 120px;
+	height: 50px;
+	border: 1px solid #ABABAB;
+}
+.txt {
+	font-size: 14px;
+	color: #999999;
+}
+a.btn {
+	display: inline-block;
+	background-image: url("../images/glb_v2.png");
+	background-position: 0 -360px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 37px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+    width: 119px;
+}
+a.btn:active {
+	background-position: -288px -360px;
+}
+.warnTipDiv {
+	background-color: #FFFFE1;
+    border: 2px solid #C6C6A8;
+    height: auto;
+    margin-top: 13px;
+    overflow: visible;
+    position: relative;
+    width: 310px;
+    padding: 10px;
+}
+.warnIconBig {
+	position: relative;
+	top: -5px;
+	display: inline-block;
+	background-image: url("../images/glb_v2.png");
+	background-position: 0 -216px;
+    height: 30px;
+    width: 30px;
+}
+.warnTipDiv .warnText{
+	display: inline-block;
+	margin-left: 5px;
+	line-height: 30px;
+}
+.arr {
+	background-image: url("../images/glb_v2.png");
+	background-position: -576px -72px;
+    height: 14px;
+    left: 31px;
+    position: absolute;
+    top: -14px;
+    width: 25px;
+}
+.warnIcon {
+	position: relative;
+	top: 4px;
+	background-image: url("../images/glb_v2.png");
+	display: inline-block;
+	background-position: -36px -288px;
+    height: 14px;
+    width: 14px;
+}
+.warnTip .warnText {
+	color: red;
+	font-size: 13px;
+}
+#center .right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 315px;
+	min-height: 800px;
+	border-left: 1px solid #E0E0E0;
+	background-color: #F5F5F5;
+}
+.rcnt {
+	margin: 30px 15px 0 30px;
+}
+#bottom {
+	heght: 40px;
+}

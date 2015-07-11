@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/common-ui.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script>
+$( document ).ready( function(){
+	var targets = $("input[type=text]");
+	var count = 0;
+	
+	targets.bind( 'mouseenter', function(){
+		showTip(this);
+		//count++;
+	});
+	targets.bind( 'mouseleave', function(){
+		removeTip(this);
+	});
+	
+	$("#reset-btn").click(function(e) {
+        removeAllTip($("#ah"));
+    });
+});
+</script>
+</head>
+
+<body>
+	<div class="c-tit">
+    	<span class="text">
+        	<i class="icon-th-large"></i>
+            完全表单
+        </span>
+    </div>
+    <form>
+        <table class="table-form">
+            <tr>
+                <th colspan="4"><i class="icon-tasks"></i> 个人信息表单</th>
+            </tr>
+            <tr>
+                <td><i class="icon-asterisk"></i> 姓名</td>
+                <td>
+                	<input type="text" title="这是元素自带的title标签中的内容,如果不传提示内容,默认显示这个标签里的文本" />
+                </td>
+                <td>性别</td>
+                <td align="left"><input type="radio" />男<input type="radio" />女</td>
+            </tr>
+            <tr>
+                <td>出生日期</td>
+                <td><input type="text" /></td>
+                <td>户籍所在地</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>手机</td>
+                <td><input type="text" /></td>
+                <td>电子邮件</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>现居地址</td>
+                <td>
+                    <select>
+                        <option>北京</option>
+                        <option>上海</option>
+                        <option>河南</option>
+                    </select>
+                </td>
+                <td >
+                    <select>
+                        <option>济源</option>
+                        <option>海淀</option>
+                        <option>浦东新区</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>奥利匹克公园</option>
+                        <option>北京</option>
+                        <option>鸟巢</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>座右铭</td>
+                <td colspan="3"><input type="text" /></td>
+            </tr>
+            <tr>
+                <td colspan="4">自我评价</td>
+            </tr>
+            <tr>
+                <td colspan="4"><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>爱好</td>
+                <td colspan="3" align="left" id="ah">
+                    <input type="checkbox" />音乐
+                    <input type="checkbox" />游戏
+                    <input type="checkbox" />电影
+                    <input type="checkbox" />Java
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><div class="btn" id="reset-btn"><i class="icon-reply"></i> 重置</div></td>
+                <td colspan="2"><div class="btn">提交 <i class="icon-share-alt"></i></div></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

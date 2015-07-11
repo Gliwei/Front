@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*头部CSS样式*/
+#top {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#top div img {
+	display: block;
+	height: 100%;
+	width: 50%;	
+}
+#login {
+	text-align: right;
+	display: block;
+	float: right;
+}
+/***************************/
+#menu_box {
+	width: 980px;
+	background-image: url(../img/menu_bg.png);
+	float: left;
+}
+#menu_box ul {
+	list-style: none;
+	margin: 0px;
+}
+#menu_box li {
+	cursor: pointer;
+	float:left;
+	text-decoration:none;
+	background-image: url(../img/nav.png);
+	background-position: -10px -76px;
+	padding-left: 8px;
+}
+
+#menu_box li span {
+	display: block;
+	float: left;
+	background-image: url(../img/nav.png);
+	background-repeat: no-repeat;
+	background-position: left -76px;
+	padding-top: 11px;
+	padding-right: 25px;
+	padding-bottom: 9px;
+	padding-left: 16px;
+	color: #CCCCCC;
+}
+#menu_box li:hover span {
+	color:#336600;
+}
+#menu_box li:hover {
+	background-position: left top;
+}
+#menu_box li:hover span {
+	background-position: right top;
+}
+
+/******path*******************/
+#path{
+	clear:left;	
+	display: block;
+	padding-top:3px;
+}
+/*头部CSS样式结束*/
+
+
+
+/*内容部分CSS样式*/
+#center{
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 3px;
+}
+#left {
+	width: 35%;
+	border: 1px solid #000;
+}
+#right{
+	float: right;
+	border: 1px solid #000;
+	width: 65%;
+}
+#left p {
+	text-align: center;
+}
+/*内容部分CSS样式结束*/
+
+/*底部部分CSS样式*/
+#bottom {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+#bottom p{
+	width: 78%;
+}
+#bottom p input {
+	height: 25px;
+	width: 100%;	
+}
+#bottom p textarea {
+	height: 120px;
+	width: 100%;	
+}
+#bottom p span {
+	font-size: 14px;
+	color: #999;
+	float: left;
+}
+/*底部部分CSS样式结束*/

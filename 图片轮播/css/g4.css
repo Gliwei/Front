@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image:url(../img/bg.png);
+}
+#G1 {
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+#G1 #boder{
+	margin-right: auto;/*实现居中*/
+	margin-left: auto;/*实现居中*/
+	/*圆角边框*/
+	-moz-border-radius: 5px; /*Firefox*/
+	-webkit-border-radius: 5px; /*Safari、Chrome*/
+	border-radius: 5px; /*Opera 10.5+、IE 6+*/
+	
+	/*阴影*/
+	-moz-box-shadow: 4px 4px 5px #969696; /* Firefox */
+	-webkit-box-shadow: 4px 4px 5px #969696; /* Safari and Chrome */
+	box-shadow: 4px 4px 5px #969696; /* Opera 10.5+、IE6+*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=3); /* IE6/7/8 */
+	/*边框*/
+	border: 5px solid #CFC;
+	/*宽高*/
+	height: 350px;
+	width: 1000px;
+	
+
+}
+#G1 #view {
+	opacity:0.95;
+	width:100%;
+	height:100%;
+	position: relative;
+	top: -144px;
+	z-index: 0;
+	overflow:hidden;
+	/*渐变背景色*/
+	background-image: -moz-linear-gradient(top, #81a8cb, #4477a1); /* Firefox 3.6 */
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #4477a1),color-stop(1, #81a8cb)); /* Safari & Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81a8cb', endColorstr='#4477a1'); /* IE6 & IE7 */ 
+	background-color: #81a8cb;
+	
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+#G1 #view #film{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width:20000px;/*使 li 并成一排*/
+	/*相对定位*/
+	position:relative;
+	left: 0px;
+}
+#G1 #view #film li {
+	display:block;
+	float:left;/*左浮动*/
+}
+
+#G1 #boder #bottom_btn {
+	opacity: 0.9;
+	/*Z轴层次*/
+	z-index: 11;
+	/*居中*/
+	margin-right: auto;
+	margin-left: auto;
+	/*背景*/
+	background-image:url(../img/g4_bottom_btn_box.png);
+	background-repeat:no-repeat;
+	/*CSS3 , 圆角边框*/
+	-moz-border-radius: 3px; /*Firefox*/
+	-webkit-border-radius: 3px; /*Safari、Chrome*/
+	border-radius: 3px; /*Opera 10.5+、IE 6+*/
+	/*宽高*/
+	width: 267px;
+	height: 50px;
+	/*相对定位*/
+	position: relative;
+	text-align:center;
+	
+	padding: 0px 0px 0px 0px;
+}
+#G1 #bottom_btn img {
+	cursor:pointer;
+	margin-top:20px;
+	margin-right: 1px;
+	margin-left: 1px;	
+}
+#G1 #left_btn {
+	opacity: 0.5;
+	z-index:22;
+	cursor:pointer;
+	width:42px;
+	height:95px;
+	background-image: url(../img/g3_left_btn.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 40%;
+	left:-27px;
+	
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+#G1 #right_btn {
+	opacity: 0.5;
+	z-index:22;
+	cursor:pointer;
+	float:right;
+	width:42px;
+	height:95px;
+	background-image: url(../img/g3_right_btn.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 40%;
+	right:-27px;
+	
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+#G1 #view:hover {
+	opacity: 1;
+}
+#G1 #right_btn:hover {
+	opacity: 1;
+}
+#G1 #left_btn:hover {
+	opacity: 1;
+}

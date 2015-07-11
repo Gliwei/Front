@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+function setInp(){
+	var testVal = document.getElementById("test").value;
+	//window.opener.document.getElementById("inp").value = testVal;
+	alert(window.dialogArguments.arg1);
+	alert(window.dialogArguments.arg2);
+	window.opener.backVal(testVal);
+	window.close();
+}
+</script>
+<style>
+
+.bg {
+	 background: -moz-linear-gradient(center left, rgba(81,115,132,0.55), rgba(121,163,184,0.55) 50%, rgba(81,115,132,0.55));  
+     background: -webkit-gradient(linear, 0% 100%, 100% 100%, from(#517384), color-stop(50%, #79a3b8), to(#517384));  
+}
+</style>
+</head>
+
+<body>
+	this is t2.html
+	<input type="text" id="test" />
+	<button onclick="setInp()">Close</button>
+	
+	<div class="bg">AAAAAAAAAAAAAAAAAAAAAAA</div>
+</body>
+</html>
