@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#btn").click(function() {
+        var url = "http://localhost:8080/myt/pub/commodity-view-stat!history?cid=509";
+        alert(url);
+
+        $.ajax({
+            url : url,
+            dataType : 'jsonp',
+            success : function(json){
+                alert(json);
+            }
+        });
+
+        /*$.post(url, "", function(data) {
+            alert(data);
+            $("#data").html(data);
+        },"jsonp");*/
+    });
+    
+});
+</script>
+</head>
+
+<body>
+    <input type="button" value="TEST" id="btn">
+	<div id="data"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/rightFixed.css"/>
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/rightFixed.js"></script>
+</head>
+
+<body>
+	<div class="header">
+    	<div class="base">
+        	<div class="inner">
+            	BaseWidth:<input type="text" id="w" onchange="modifyWidth();" value="1000" />
+                <input type="button" value="GO" onclick="modifyWidth();"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    	<div class="base">
+			<div class="info">
+            	<div class="inner">
+                	Info width : 25%<br />
+                    <span id="test"></span>
+                    Info<br />
+                    Info<br />
+                    Info<br />
+                    Info<br />
+                </div>
+            </div>
+            <div class="content">
+            	<div class="inner">
+                	Content width : 75%<br />
+                    存在的问题：IE7下改变宽度背景色闪烁<br />
+                    Content<br />
+                    Content<br />
+                    Content<br />
+                    Content<br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    	<div class="base">
+        	<div class="inner">
+    			FOTTER:support IE7/8/9/10, Firefox, Chrome
+            </div>
+        </div>
+    </div>
+</body>
+</html>

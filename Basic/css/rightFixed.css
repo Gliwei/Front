@@ -1,0 +1,51 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header {
+	background-color: #FAFAFA;
+}
+.container {
+	background-color: transparent;
+}
+.footer {
+	background-color: #FAFAFA;
+}
+/** 如果需要头部和底部宽度100%
+.header .base, .footer .base {
+	width: 100%;
+}**/
+div.base {
+	/*为了使内部的float元素也可以撑开此div*/
+	display: table;
+	width: 1000px;
+	min-width: 220px;
+	margin: 0 auto;
+	position: relative;
+	
+	border: 1px dashed #CCC;
+}
+div.inner {
+	padding: 10px;
+}
+.container .content {
+	width: 75%;
+	height: 1300px;
+	
+	background-color:#FF6;
+	/**用百分比不能加border，会有些许错位
+	border: 1px dashed #9F0;**/
+}
+.container .info {
+	float: right;
+	width: 25%;
+	
+	background-color: #69F;	
+	/**用百分比不能加border，会有些许错位
+	border: 1px dashed #9F0;**/
+}
+.container .info .inner {
+	background-color: #69F;
+}
