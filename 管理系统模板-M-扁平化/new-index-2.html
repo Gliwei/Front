@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/new-index-2.css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+	// JavaScript Document
+	function modifyWidth(){
+		var w = $("#w").val();
+		$("div.base").animate({"width":w},300);
+	}
+	// JavaScript Document
+	$(function(){
+		
+		/****/
+		$("body").hide(0).fadeIn(300);
+		$(".menu-wrap").children().hide();
+		$("div.base").animate({"width":"100%"},300,function(){
+			$(".menu-wrap").children().fadeIn(300);
+			$(".menu-tit[current=true]").siblings("li").slideDown(300);
+		});
+		
+		
+		$(".menu-tit").click(function(e) {
+			if($(this).attr("current")=="false"){
+				$(".menu-tit[current=true]").attr("current","false").siblings("li").slideUp(300);
+				$(this).attr("current","true").siblings("li").slideDown(300);
+			}
+		});
+		var navIsShow = true;
+		var leftW = 220;
+		var nav = $(".container .nav");
+		var content = $(".container .content");
+		$("#full-screen").click(function(){
+			var ths = $(this);
+			if(navIsShow){
+				nav.animate({"width":0},300).find("ul").slideUp(200);
+				content.animate({"margin-left":0},300,function(){
+					ths.find("i").removeClass().addClass("icon-chevron-sign-right");
+					navIsShow = false;
+				});
+			}else{
+				nav.animate({"width":leftW},300,function(){
+					$(this).find("ul").slideDown(200);
+				});
+				content.animate({"margin-left":leftW},300,function(){
+					ths.find("i").removeClass().addClass("icon-chevron-sign-left");
+					navIsShow = true;
+				});
+			}
+		});
+	});
+	function hideMenu(){
+		$("#left").animate({width:0},300);
+	}
+	
+	function loadPage(url,node){
+		$.get(url,function(result){
+			var main = $("#main");
+			main.html(result);
+			console.info(main);
+			$(".nav li i").css("color","inherit");
+			$(node).find("i").css("color","blue");
+		},"html");
+	}
+	function skin(val){
+		$("body").attr("class","s-"+val);
+	}
+</script>
+</head>
+
+<body class="s-green">
+<div class="base">
+	<div class="header">
+        <div class="logo-wrap">
+            <div class="logo"><i class="icon-apple"></i> Loooooogo</div>
+        </div>
+        <div class="menu-wrap">
+            <div class="left">
+                <span class="top-btn" id="full-screen"><i class="icon-chevron-sign-left"></i></span>
+            </div>
+            <div class="right">
+                <span class="top-btn right">Exit</span>
+            </div>
+            
+            body width : <input type="text" id="w" onchange="modifyWidth();" value="1000" />
+            <input type="button" value="GO" onclick="modifyWidth();"/>
+            skin : <input type="button" value="blue" onclick="skin('blue');"/>
+            <input type="button" value="green" onclick="skin('green');"/>
+        </div> 
+    </div><!-- header end -->
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <div class="menu-tit" current="true">
+                    <i class="icon-usd"></i>
+                    <span>常用元素</span>
+                </div>
+                <li onclick="loadPage('table.html',this);">
+                    <i class="icon-caret-right"></i>
+                    <span>简单表格</span>
+                </li>
+                <li class="line"></li>
+                <li onclick="loadPage('table-2.html',this);">
+                    <i class="icon-caret-right"></i>
+                    <span>简单表格-2</span>
+                </li>
+                <li class="line"></li>
+                <li onclick="loadPage('sform.html',this);">
+                    <i class="icon-caret-right"></i>
+                    <span>简单表单</span>
+                </li>
+                <li class="line"></li>
+                <li onclick="loadPage('tform.html',this);">
+                    <i class="icon-caret-right"></i>
+                    <span>完全表单</span>
+                </li>
+            </ul>
+            <ul>
+                <div class="menu-tit" current="false">
+                    <i class="icon-html5"></i>
+                    <span>扩展元素</span>
+                </div>
+                <li onclick="loadPage('ul.html',this);">
+                    <i class="icon-caret-right"></i>
+                    <span>平铺列表</span>
+                </li>
+                <li class="line"></li>
+                <li onclick="loadPage('http://www.google.com.hk/',this);">
+                    <i class="icon-caret-right"></i>
+                    <span>待添aa加</span>
+                </li>
+                <li class="line"></li><li>
+                    <i class="icon-caret-right"></i>
+                    <span>待添加</span>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <i class="icon-caret-right"></i>
+                    <span>待添加</span>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <i class="icon-caret-right"></i>
+                    <span>待添加</span>
+                </li>
+            </ul>
+            <ul>
+                <div class="menu-tit"  current="false">
+                    <i class="icon-css3"></i>
+                    <span>Others</span>
+                </div>
+                <li>
+                    <i class="icon-caret-right"></i>
+                    <span>lie over</span>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <i class="icon-caret-right"></i>
+                    <span>lie over</span>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <i class="icon-caret-right"></i>
+                    <span>lie over</span>
+                </li>
+            </ul>
+        </div><!-- nav end -->
+        <div class="content">
+            <div class="inner" id="main">
+                <div class="default">
+                    <i class="icon-anchor"></i>
+                    <div class="text">Welcome</div>
+                </div>
+            </div><!-- inner end -->
+        </div><!-- content end -->
+    </div><!-- container end -->
+    
+    <div class="footer">
+        <div class="inner">
+            Support IE8/9/10, Firefox, Chrome.
+        </div><!-- inner end -->
+    </div><!-- fotter end -->
+</div>
+</body>
+</html>

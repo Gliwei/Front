@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表单</title>
+<link href="css/common-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script>
+	// 必须包含script标签 , 不然的化IE8加载出错
+	$(function(){
+		$("form").bind("submit",function(){
+			var action = this.action;
+			var method = this.method;
+			var data = $(this).serialize();
+			if(method=="get"){
+				$.get(action, data, function(result){
+					$("#right .r-cnt").html(result);
+				});
+			}else{
+				$.post(action, data, function(result){
+					$("#right .r-cnt").html(result);
+				});
+			}
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="c-tit">
+    	<span class="text">
+        	<i class="icon-bookmark"></i> 表单
+        </span>
+    </div>
+    <form action="table.html" method="get" class="simple-form">
+        <div class="input-wrap">
+        	<label><i class="icon-asterisk"></i> 用户名:</label><input type="text" />
+            <span class="tip info"><i class="icon-info-sign"></i> 用户名6~18位 , 必须以字母开头</span>
+        </div>
+        
+        <div class="input-wrap">
+        	<label>密码:</label><input type="password" />
+        	<span class="warn info"><i class="icon-exclamation-sign"></i> 一些警告信息</span>
+        </div>
+        
+        <div class="input-wrap">
+        	<label>确认密码:</label><input />
+        	<span class="error info"><i class="icon-remove-sign"></i> 一些错误信息</span>
+        </div>
+        
+        <div class="tarea-wrap">
+        	<label>描述</label><textarea></textarea>
+            <span class="ok info"><i class="icon-ok-sign"></i> 通过</span>
+        </div>
+        
+        <div class="input-wrap">
+            <label>状态:</label>
+            <select>
+                <option>可用</option>
+                <option>不可用</option>
+            </select>
+        </div>
+        <br />
+        <input type="submit" value="提交" />
+        <input type="reset" value="重置 "/>            
+    </form>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/new-index.css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+	// JavaScript Document
+	$(function(){
+		
+		$("body").hide(0).fadeIn(300);
+		$(".menu-wrap").children().hide();
+		$("div.base").animate({"width":"100%"},350,function(){
+			$(".menu-wrap").children().fadeIn(300);
+			$(".menu-tit[current=true]").siblings("li").slideDown(300);
+		});
+		
+		$(".menu-tit").click(function(e) {
+			if($(this).attr("current")=="false"){
+				$(".menu-tit[current=true]").attr("current","false").siblings("li").slideUp(300);
+				$(this).attr("current","true").siblings("li").slideDown(300);
+			}
+		});
+		var navIsShow = true;
+		var leftW = 220;
+		var nav = $(".container .nav");
+		var content = $(".container .content");
+		$("#full-screen").click(function(){
+			var ths = $(this);
+			if(navIsShow){
+				nav.animate({"width":0},300,function(){
+					nav.hide(0);	
+				}).find("ul").slideUp(200);
+				content.animate({"margin-left":0},300,function(){
+					ths.find("i").removeClass().addClass("icon-chevron-sign-right");
+					navIsShow = false;
+				});
+			}else{
+				nav.show(0);
+				nav.animate({"width":leftW},300,function(){
+					$(this).find("ul").slideDown(200);
+				});
+				content.animate({"margin-left":leftW},300,function(){
+					ths.find("i").removeClass().addClass("icon-chevron-sign-left");
+					navIsShow = true;
+				});
+			}
+		});
+		
+		//滚动模式
+		var baseIsFull = true;
+		var full = '100%';
+		var small = '90%';
+		var fixNode = $(".fix");
+		// JavaScript Document
+		$("#resizeBtn").click(function(e) {
+            if(baseIsFull){
+				//boxed
+				$("div.base").animate({"width":small},300);
+				$(this).children("i").attr("class","icon-resize-full");
+				fixNode.removeClass("fix");
+				baseIsFull = false;
+			}else{
+				//fixed
+				$("div.base").animate({"width":full},300);
+				$(this).children("i").attr("class","icon-resize-small");
+				fixNode.addClass("fix");
+				baseIsFull = true;
+			}
+        });
+	});
+	function hideMenu(){
+		$("#left").animate({width:0},300);
+	}
+	
+	function loadPage(url,node){
+		$.post(url,function(result){
+			var main = $("#main");
+			main.html(result);
+			main.hide(0).fadeIn(300);
+			console.info(main);
+			$(".nav li i").css("color","inherit");
+			$(node).find("i").css("color","blue");
+		},"html");
+	}
+	function skin(val){
+		$("body").attr("class","s-"+val);
+	}
+	function showSkinBox(){
+		$("#snikBox").fadeToggle(200);
+	}
+</script>
+</head>
+
+<body class="s-blue">
+	<div class="header fix">
+    	<div class="base">
+        	<div class="logo-wrap">
+                <div class="logo"><i class="icon-apple"></i> Loooooogo</div>
+            </div>
+            <div class="menu-wrap">
+            	&nbsp;
+            	<div class="left">
+                	<span class="top-btn" id="full-screen"><i class="icon-chevron-sign-left"></i></span>
+                    <span class="top-btn" id="resizeBtn"><i class="icon-resize-small"></i></span>
+                    <span class="top-btn" onclick="showSkinBox();">
+                    	<i class="icon-adjust"></i>
+                    </span>
+                    <span id="snikBox" class="option-box">
+                        <span class="top-btn" onclick="skin('blue');" style="color:blue">
+                            <i class="icon-tint"></i>
+                        </span>
+                        <span class="top-btn" onclick="skin('green');" style="color:green">
+                            <i class="icon-tint"></i>
+                        </span>
+                    </span>
+                </div>
+            	<div class="right">
+                	<span class="top-btn"><i class="icon-user"></i>Jon</span>
+                	<a href="login.html"><span class="top-btn"><i class="icon-unlink"></i>Exit</span></a>
+                </div>
+            </div>
+        </div><!-- base end -->
+    </div><!-- header end -->
+    <div class="container">
+    	<div class="base">
+    		<div class="nav fix">
+                <ul>
+                    <div class="menu-tit" current="true">
+                        <i class="icon-usd"></i>
+                        <span>常用元素</span>
+                    </div>
+                    <li onclick="loadPage('table.html',this);">
+                        <i class="icon-caret-right"></i>
+                        <span>简单表格</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('table-2.html',this);">
+                        <i class="icon-caret-right"></i>
+                        <span>简单表格-2</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('sform.html',this);">
+                        <i class="icon-caret-right"></i>
+                        <span>简单表单</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('tform.html',this);">
+                        <i class="icon-caret-right"></i>
+                        <span>完全表单</span>
+                    </li>
+                </ul>
+                <ul>
+                    <div class="menu-tit" current="false">
+                        <i class="icon-html5"></i>
+                        <span>扩展元素</span>
+                    </div>
+                    <li onclick="loadPage('ul.html',this);">
+                        <i class="icon-caret-right"></i>
+                        <span>平铺列表</span>
+                    </li>
+                    <li class="line"></li>
+                    <li onclick="loadPage('http://www.google.com.hk/',this);">
+                        <i class="icon-caret-right"></i>
+                        <span>待添aa加</span>
+                    </li>
+                    <li class="line"></li><li>
+                        <i class="icon-caret-right"></i>
+                        <span>待添加</span>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <span>待添加</span>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <span>待添加</span>
+                    </li>
+                </ul>
+                <ul>
+                    <div class="menu-tit"  current="false">
+                        <i class="icon-css3"></i>
+                        <span>Others</span>
+                    </div>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <span>lie over</span> 
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <span>lie over</span>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <span>lie over</span>
+                    </li>
+                </ul>
+            </div><!-- nav end -->
+            <div class="content fix">
+            	<div class="inner" id="main">
+                	<div class="default">
+                    	<i class="icon-anchor"></i>
+                        <div class="text">Welcome</div>
+                    </div>
+                </div><!-- inner end -->
+            </div><!-- content end -->
+        </div><!-- base end -->
+    </div><!-- container end -->
+    
+    <div class="footer fix">
+    	<div class="base">
+        	<div class="inner">
+    			Support IE8/9/10, Firefox, Chrome.
+            </div><!-- inner end -->
+        </div><!-- base end -->
+    </div><!-- fotter end -->
+</body>
+</html>

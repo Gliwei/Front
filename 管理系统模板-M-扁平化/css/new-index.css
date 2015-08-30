@@ -1,0 +1,224 @@
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight:100;
+	text-decoration:none;
+	color: inherit;
+}
+body {
+	font-family: '微软雅黑',arial,宋体,sans-serif;
+	font-size:12px;
+	margin: 0;
+	padding: 0;
+	
+}
+/** **/
+.header, .footer {
+	background-image: url(../images/bg.png);
+}
+div.base {
+	/*为了使内部的float元素也可以撑开此div*/
+	display: table;
+	width: 400px;
+	min-width: 220px;
+	margin: 0 auto;
+}
+
+/************ header style ************/
+.header {
+	
+	width: 100%;
+	
+	background-color: #FAFAFA;
+	height: 40px;
+	line-height: 40px;
+	opacity: 0.9;
+}
+.header.fix {
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+}
+.header .logo-wrap {
+	float: left;
+	width: 221px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.3) inset;
+}
+
+.header .logo-wrap .logo {
+	font-size: 26px;
+	font-weight: 900;
+	padding: 0 10px;
+}
+
+.header .menu-wrap {
+	content: "";
+	padding: 0 10px;
+	margin-left: 220px;
+	font-size: 16px;
+}
+.header .top-btn {
+	cursor: pointer;
+	margin: 0 7px;
+}
+.header .top-btn i {
+	font-size: 26px;
+	position: relative;
+	top: 3px;
+}
+.header .top-btn i:hover {
+	text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+.header .right {
+	float: right;
+	text-align: right;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+.header .right .top-btn i {
+	margin-right: 4px;
+	font-size: 20px;
+	position: relative;
+	top: 1px;
+}
+.header .right .top-btn {
+	
+	padding: 3px 15px;
+}
+.header .right .top-btn:hover {
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+.header .right .top-btn:active {
+	box-shadow: 0 0 3px rgba(0,0,0,0.3) inset;
+}
+.header .left {
+	float: left;
+	text-align: left;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+.header .option-box {
+	display: none;
+}
+/* green */
+body.s-green .header .logo-wrap {
+	color: #FFFFFF;
+	background-color: #83AA40;
+}
+body.s-green .header .menu-wrap {
+	color: #FFFFFF;
+	background: linear-gradient(to bottom, #84A943 0%, #6A9B17 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#84A943', endColorstr='#6A9B17');
+}
+/* blue */
+body.s-blue .header .logo-wrap {
+	color: #F7F7F7;
+	background-color: #0B4073;
+	box-shadow: 0 0 2px #000099 inset;
+}
+body.s-blue .header .menu-wrap {
+	color:#F7F7F7;
+	background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');
+}
+/************ container style ************/
+.container {
+	padding-bottom: 15px;
+	background-color: #FFFFFF;
+}
+/* left menu style */
+.nav {
+	width: 220px;
+
+	float: left;
+	height: 100%;
+	color: #666666;
+	background-color: #F7F7F7;
+	border-right: 1px solid #EDEDED;
+	box-shadow: 0 1 2px #CCC;
+	overflow: hidden;
+}
+.nav.fix {
+	position: fixed;
+	top: 40px;
+}
+.nav ul li {
+	display: none;
+}
+.nav .menu-tit {
+	cursor: pointer;
+	line-height:35px;
+	font-size: 14px;
+	border-top: 1px solid #EDEDED;
+	border-bottom: 1px solid #EDEDED;
+	border-left: 3px solid #333;
+	background: linear-gradient(to bottom, #FFFFFF 0%, #F7F7F7 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#F7F7F7');
+}
+.nav .menu-tit[current=true] {
+	border-left: 3px solid blue;
+}
+.nav .menu-tit[current=true] i {
+	color: blue;
+}
+.nav .menu-tit i {
+	font-size:18px;
+	margin: 0 5px 0 20px;
+}
+.nav li {
+	font-size:12px;
+	line-height:35px;
+	cursor: pointer;
+}
+.nav li i {
+	margin: 0  5px 0 45px;
+}
+.nav li.line {
+	border-bottom: 1px dotted #FFFFFF;
+    border-top: 1px dotted #DDE3E9;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin: 0 10px;
+    overflow: hidden;
+}
+/* content style */
+.container .content {
+	margin-left: 220px;
+}
+.container .content.fix {
+	margin-top: 40px;
+}
+.content .default {
+	font-size: 204px;
+	padding-top: 180px;
+	color: #FAFAFA;
+	text-align: center;
+	text-shadow: 0 0 1px #FCFCFC;
+}
+.content .default .text {
+	font-size: 36px;
+}
+.content .inner {
+	padding: 15px;
+}
+/************ footer menu style ************/
+.footer {
+	width: 100%;
+	background-color: #FAFAFA;
+	opacity: 0.9;
+}
+.footer.fix {
+	position: fixed;
+	bottom: 0;
+}
+.footer .inner {
+	background-color: #FFF;
+	border-top: 1px solid #FCF;
+	color: #999;
+	text-align: center;
+}

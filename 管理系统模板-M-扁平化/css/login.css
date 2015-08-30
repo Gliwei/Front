@@ -1,0 +1,188 @@
+/* CSS Document */
+body {
+	padding: 0;
+	margin-top: 0;
+	font-family: '微软雅黑','HelveticaNeue',Arial,Helvetica,sans-serif;
+	background-color: #000;
+}
+.blur {   
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+
+.opacity-box {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	padding:0;
+	margin:0;
+	color: #666666;
+}
+.head h1 {
+	font-size:18px;
+}
+.head h3 {
+	color: #99999E;
+	font-size:14px;
+}
+
+.loginWrap {
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+	opacity: 0.8;
+}
+.loginBox {
+	margin-top: 200px;
+	border-radius:2px;
+}
+.head {
+	position:relative;
+	z-index:101;
+	border-radius: 2px 2px 0 0;
+	padding: 15px 15px 15px 80px;
+	height: 42px;
+	/*background: linear-gradient(to bottom, #EDEDED 0%, #DEDEDE 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EDEDED', endColorstr='#DEDEDE');*/
+	background-color: #EDEDED;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #DEDEDE;
+	border-right-color: #DEDEDE;
+	border-bottom-color: #DEDEDE;
+	border-left-color: #DEDEDE;
+}
+.icon {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	width:64px;
+	height:64px;
+	background-image:url(../images/users.png);
+}
+.content {
+	position: relative;
+	padding: 20px;
+	background-color: #444444;
+	overflow:hidden;
+}
+.content p {
+	position: relative;
+	display: block;
+	margin: 0 0 25px 0;
+	padding: 0;
+	/*box-shadow: 0 0 3px #333;*/
+}
+.content label {
+	display: block;
+	float: left;
+	text-align: center;
+	border-radius: 2px 0 0 2px;
+	height: 40px;
+	line-height: 40px;
+	font-weight:700;
+	width: 70px;
+	color: #C0FFFF;
+	border: 0 none;
+	/*background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;*/
+	/*filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');*/
+	background-color: #3B6998;
+}
+.content input {
+	padding: 0 5px;
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #666666;
+	border-radius: 0 2px 2px 0;
+	width: 278px;
+	background-color: #EEEEEE;
+	border: 0 none;
+	outline: none;
+}
+.content .verify-code input {
+	width:150px;
+	border-radius: 0;
+}
+.content .verify-code img {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width:121px;
+	height: 44px;
+	border-radius: 0 3px 3px 0;
+}
+.submitBtn {
+	cursor:pointer;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 2px;
+	/*box-shadow: 0 3px 3px #333;*/
+	color: #C0FFFF;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 900;
+	/*background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');*/
+	background-color: #3B6998;
+}
+.submitBtn:hover {
+	/*background: linear-gradient(to bottom, #4B84B6 0%, #06619B 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4B84B6', endColorstr='#06619B');*/
+	background-color: #06619B;
+}
+.submitBtn:active {
+	/*box-shadow: 0 0 3px #333 inset;
+	background: linear-gradient(to bottom, #30F 0%, #06C 100%) repeat scroll 0 0 transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3301FF', endColorstr='#0360CF');*/
+	background-color: #30F;
+}
+.otherInfo {
+	font-size:12px;
+	margin-top:20px;
+	color: #888;
+}
+.shadow {
+	z-index: -1;
+	margin-top:10px;
+	height:30px;
+	background-image:url(../images/loginshadow.png);
+	background-repeat:no-repeat;
+}
+.tip {
+	position: absolute;
+	top: 0;
+	right: 2px;
+	z-index: 100px;
+	background-color: #000;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 2px;
+	opacity: 0.6;
+	color: #FFFFFF;
+}
+.tip .arr {
+	position:absolute;
+	width: 6px;
+	height: 12px;
+	top: 15px;
+	left: -6px;
+	background-image:url(../images/arr3.png);
+}
