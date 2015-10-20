@@ -61,15 +61,18 @@ div.base {
 }
 .header .top-btn {
 	cursor: pointer;
-	margin: 0 7px;
+	display: inline-block;
+	line-height: 40px;
+	margin: 0 5px;
+}
+.header .top-btn:hover {
+	border-bottom: 1px blue solid;
 }
 .header .top-btn i {
 	font-size: 26px;
-	position: relative;
-	top: 3px;
 }
 .header .top-btn i:hover {
-	text-shadow: 0 0 2px rgba(0,0,0,0.5);
+	color: #FFFFFF;
 }
 .header .right {
 	float: right;
@@ -77,22 +80,6 @@ div.base {
 	display: block;
 	height: 40px;
 	line-height: 40px;
-}
-.header .right .top-btn i {
-	margin-right: 4px;
-	font-size: 20px;
-	position: relative;
-	top: 1px;
-}
-.header .right .top-btn {
-	
-	padding: 3px 15px;
-}
-.header .right .top-btn:hover {
-	box-shadow: 0 0 3px rgba(0,0,0,0.3);
-}
-.header .right .top-btn:active {
-	box-shadow: 0 0 3px rgba(0,0,0,0.3) inset;
 }
 .header .left {
 	float: left;
@@ -111,19 +98,25 @@ body.s-green .header .logo-wrap {
 }
 body.s-green .header .menu-wrap {
 	color: #FFFFFF;
+	background-color: #6A9B17;
+	/*
 	background: linear-gradient(to bottom, #84A943 0%, #6A9B17 100%) repeat scroll 0 0 transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#84A943', endColorstr='#6A9B17');
+	*/
 }
 /* blue */
 body.s-blue .header .logo-wrap {
 	color: #F7F7F7;
 	background-color: #0B4073;
-	box-shadow: 0 0 2px #000099 inset;
+	/*box-shadow: 0 0 2px #000099 inset;*/
 }
 body.s-blue .header .menu-wrap {
-	color:#F7F7F7;
+	color: #F7F7F7;
+	background-color: #3B6998;
+	/*
 	background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');
+	*/
 }
 /************ container style ************/
 .container {
@@ -156,8 +149,11 @@ body.s-blue .header .menu-wrap {
 	border-top: 1px solid #EDEDED;
 	border-bottom: 1px solid #EDEDED;
 	border-left: 3px solid #333;
+	background-color: #FFF;
+	/*
 	background: linear-gradient(to bottom, #FFFFFF 0%, #F7F7F7 100%) repeat scroll 0 0 transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#F7F7F7');
+	*/
 }
 .nav .menu-tit[current=true] {
 	border-left: 3px solid blue;

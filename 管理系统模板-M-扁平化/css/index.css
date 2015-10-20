@@ -1,192 +1,147 @@
 /* CSS Document */
 * {
-	margin:0;
-	padding:0;
-	list-style:none;
-	font-weight:100;
-	text-decoration:none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 body {
-	font-family: '微软雅黑',arial,宋体,sans-serif;
-	font-size:12px;
-	min-width: 1024px;
+	font: 14px/1.5 tahoma,arial,"Hiragino Sans GB","瀹嬩綋",sans-serif;
 }
-.boder {
-	border: 1px solid #EDEDED;
-	border-radius: 2px;
-	box-shadow: 0 0 2px #FAFAFA;
-	overflow:hidden;
+a {
+	text-decoration: none;
+	color: #666;
 }
-.base {
-	height: 100%;
-	margin-left:auto;
-	margin-right:auto;
+a:hover {
+	color: #333;
 }
-/*************顶部 Logo 和 菜单 的样式****************/
-#top {
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	line-height: 40px;
+.header {
+	background-color: #FAFAFA;
 	height: 40px;
+	line-height: 40px;
+
+	position: fixed;
+	z-index: 999;
 	width: 100%;
-	background-color: #3790CE;
-	
-	box-shadow: 0 0 2px #CCC;
-	border-radius: 2px 2px 0 0;
 	opacity: 0.9;
 }
-/*********************** 换肤 *************************/
-body.s-green #top {
-	/* green */
-	color: #FFFFFF;
-	background: linear-gradient(to bottom, #84A943 0%, #6A9B17 100%) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#84A943', endColorstr='#6A9B17');
+.container {
+	padding-top: 40px;
 }
-
-body.s-blue #top {
-	/* blue */
-	color:#F7F7F7;
-	/*background: linear-gradient(to bottom, #3B6998 0%, #0B4073 100%) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3B6998', endColorstr='#0B4073');*/
-	background-color: #3B6998;
+.footer {
+	background-color: #FAFAFA;
+	width: 100%;
 }
-#top h1 {
-	padding-left: 20px;
-	width: 200px;
-	display: inline-block;
+/** 如果需要头部和底部宽度100%
+.header .base, .footer .base {
+	width: 100%;
+}**/
+div.base {
+	/*为了使内部的float元素也可以撑开此div*/
+	display: table;
+	width: 100%;
+	min-width: 220px;
+	margin: 0 auto;
 }
-/*********************** 换肤 *************************/
-body.s-green #top h1 {
-	/* green */
-	background-color: #83AA40;
-	box-shadow: 0 0 2px rgba(0,0,0,0.3) inset;
+div.inner {
+	padding: 10px;
 }
-body.s-blue #top h1 {
-	/* blue */
-	background-color: #0B4073;
-	box-shadow: 0 0 2px #000099 inset;
-}
-#top .full-screen {
-	font-size:26px;
-	cursor: pointer;
-	display: inline-block;
-	padding: 3px 10px 3px 10px;
-}
-#top .full-screen:hover {
-	color: #FFFFFF;
-}
-#top .full-screen:active {
-	color: #FAFAFA;
-}
-#top ul {
-	position:absolute;
-	top:0;
-	right:0;
-	font-size:14px;
-}
-#top ul li {
-	/* [disabled]border-right: 1px #036 solid; */
+.container .nav {
 	float: left;
-	padding: 0 15px;
-	display: inline;
-	cursor: pointer;
-}
-#top ul li i {
-	position: relative;
-	top: 1px;
-	right: 7px;
-	font-size:22px;
-	
-	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.25);
-}
-#top ul li:hover {
-	box-shadow: 0 0 3px rgba(0,0,0,0.2);
-}
-#top ul li:active {
-	box-shadow: 0 0 3px rgba(0,0,0,0.2) inset;
-}
-/**************** Center ******************/
-#center {
-	position:relative;
-	top: 40px;
-	height: 100%;
-}
-/***************左侧的菜单栏样式*****************/
-#center #left {
-	position: fixed;
-	top:40px;
-	left:0;
-	height:100%;
 	width: 220px;
-	color: #666666;
-	background-color:#F7F7F7;
-	border-right: 1px solid #EDEDED;
-	box-shadow: 0 1 2px #CCC;
-	overflow:hidden;
+	height: 100%;
+	background-color: #F1F1F1;
 }
-#crnter #left ul {
-	max-height: 500px;
-	overflow: scroll;
+.container .content {
+	background-color: #FFFFFF;	
 }
-#center #left ul li {
-	display: none;
+.container .ml {
+	margin-left: 220px;
 }
-#center #left .menu-tit {
+.green {
+	background-color: green;
+}
+.blur {   
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+/******************************************/
+.header .logo-box {
+	float: left;
+	width: 220px;
+	background-color: #F1F1F1;
+
+	text-align: center;
+}
+.header .menu-box {
+	margin-left: 220px;
+	height: 40px;
+}
+.header ul.right-menu {
+	float: right;
+}
+.header ul.left-menu {
+	float: left;
+}
+.header ul li {
+	height: 38px;
+	display: inline-block;
+	padding: 0 5px;
+	margin: 0 5px;
+	position: relative;
 	cursor: pointer;
-	line-height:35px;
-	font-size: 14px;
+}
+.header ul li:hover {
+	border-bottom: 2px blue solid;
+}
+.header ul li i {
+	font-size: 24px;
+	position: relative;
+	top: 3px;
+	margin: 0 4px;
+}
+/*******************************************/
+.nav .left-nav {
+}
+.left-nav .item .item-title {
+	background-color: #FAFAFA;
+	color: #666;
+	font-size: 16px;
+	padding-left: 20px;
 	border-top: 1px solid #EDEDED;
 	border-bottom: 1px solid #EDEDED;
-	border-left: 3px solid #333;
-	background: linear-gradient(to bottom, #FFFFFF 0%, #F7F7F7 100%) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#F7F7F7');
+	border-left: 2px solid blue;
+	height: 30px;
+	line-height: 30px;
 }
-#center #left .menu-tit[current=true] {
-	border-left: 3px solid blue;
+.left-nav .item ul li {
+	display: block;
+	padding: 5px;
+	margin-left: 40px;
 }
-#center #left .menu-tit[current=true] i {
-	color: blue;
+.nav .tool-bar {
+	font-size: 20px;
+	color: #F1F1F1;
+	background-color: #999;
+	padding: 0 10px;
+	height: 30px;
 }
-#center #left .menu-tit i {
-	font-size:18px;
-	margin: 0 5px 0 20px;
-}
-#center #left li {
-	font-size:12px;
-	line-height:35px;
+.nav .tool-bar i {
+	margin: 15px 5px;
 	cursor: pointer;
 }
-#center #left li i {
-	margin: 0  5px 0 45px;
-}
-li.line {
-	border-bottom: 1px dotted #FFFFFF;
-    border-top: 1px dotted #DDE3E9;
-    font-size: 0;
-    height: 0;
-    line-height: 0;
-    margin: 0 10px;
-    overflow: hidden;
-}
-/****************右侧的 主内容区域 和 状态栏 样式*****************/
-#center #right {
-	margin-left:220px;
-}
-#center #right .r-cnt {
-	position:relative;
-	margin: 20px;
-	padding-bottom: 20px;
-}
-#state-bar {
-	position:fixed;
-	bottom:0;
-	left:220px;
-	height: 20px;
-	width:100%;
-	border-top: 1px solid #EDEDED;
-	padding:3px 5px 0 5px;
-	background-color: #F7F7F7;
-	opacity: 0.6;
+.nav .nav-search input {
+	font-size: 14px;	
+	display: block;
+	padding: 0;
+	margin: 0;
+	height: 30px;
+	width: 100%;
+	border: none;
+	background-color: #FAFAFA;
 }
