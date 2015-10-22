@@ -9,7 +9,7 @@
 <script type="text/javascript">
     // JavaScript Document
     $(function(){
-        loadPage("table-2.html");
+        loadPage("table.html");
         $("body").hide(0).fadeIn(500);
 
         $(".item-title").click(function(e) {
@@ -21,13 +21,14 @@
             loadPage(url, this);
         });
 
-        var navIsShow = true;
         var leftW = 220;
         var content = $(".container .content");
         $("#hide-left").click(function(){
             var ths = $(this);
             
-            content.toggleClass("ml");
+            $("div.nav").slideToggle(0, function(){
+                content.toggleClass("ml");
+            });
             ths.find("i").toggleClass("icon-chevron-sign-right");
         });
     });
@@ -166,12 +167,12 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <!-- <div class="footer">
     	<div class="base">
         	<div class="inner">
     			&nbsp;
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
